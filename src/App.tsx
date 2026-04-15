@@ -41,7 +41,7 @@ const Navbar = () => {
           </a>
         </div>
 
-        <button className="md:hidden text-white" onClick={() => setIsOpen(!isOpen)}>
+        <button className="md:hidden text-white" aria-label={isOpen ? "Fechar menu" : "Abrir menu"} onClick={() => setIsOpen(!isOpen)}>
           {isOpen ? <X /> : <Menu />}
         </button>
       </div>
@@ -72,6 +72,7 @@ const Hero = () => {
           alt="Loja de móveis em Ribeirão Preto - Nexa Interiores: Mobiliário exclusivo e design de interiores premium" 
           className="w-full h-full object-cover opacity-60 scale-105"
           referrerPolicy="no-referrer"
+          fetchPriority="high"
         />
         <div className="absolute inset-0 bg-gradient-to-b from-black/20 via-black/40 to-black" />
       </div>
@@ -158,6 +159,7 @@ const FeatureCard = ({ title, description, image, onClick }: FeatureCardProps) =
       <img 
         src={imgSrc} 
         alt={title} 
+        loading="lazy"
         onError={() => setImgSrc("https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?auto=format&fit=crop&q=80&w=800")}
         className="absolute inset-0 w-full h-full object-cover opacity-80 group-hover:scale-110 transition-transform duration-700"
         referrerPolicy="no-referrer"
@@ -165,7 +167,7 @@ const FeatureCard = ({ title, description, image, onClick }: FeatureCardProps) =
       <div className="absolute inset-0 bg-gradient-to-t from-black via-black/20 to-transparent" />
       <div className="absolute bottom-0 left-0 p-6 md:p-8">
         <h3 className="text-lg md:text-xl font-display font-bold mb-2">{title}</h3>
-        <p className="text-white/60 text-[10px] md:text-xs leading-relaxed max-w-[180px]">{description}</p>
+        <p className="text-white/80 text-[10px] md:text-xs leading-relaxed max-w-[180px]">{description}</p>
         <div className="mt-4 flex items-center gap-2 text-[10px] md:text-xs font-bold uppercase tracking-wider text-[#D4AF37] opacity-0 group-hover:opacity-100 transition-opacity">
           Explorar <ChevronRight size={14} />
         </div>
@@ -193,6 +195,7 @@ const CollectionItem = ({ item, index }: CollectionItemProps) => {
       <img 
         src={itemImg} 
         alt={item.name} 
+        loading="lazy"
         onError={() => setItemImg("https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?auto=format&fit=crop&q=80&w=400")}
         className="absolute inset-0 w-full h-full object-cover opacity-70 group-hover:scale-110 transition-transform duration-700"
         referrerPolicy="no-referrer"
@@ -269,7 +272,7 @@ const Collections = () => {
               <div className="flex flex-col md:flex-row md:items-end justify-between mb-12 md:mb-16 gap-8">
                 <div className="max-w-3xl">
                   <h2 className="text-3xl md:text-5xl font-display font-bold mb-4 md:mb-6 tracking-tight">Catálogo Exclusivo. <br /> Curadoria Gratuita.</h2>
-                  <p className="text-white/60 text-base md:text-lg">Nossa equipe de especialistas oferece curadoria de interiores gratuita. Escolha os melhores sofás de luxo, poltronas e mesas de jantar, selecionados a dedo diretamente das maiores feiras de design para a sua casa em Ribeirão Preto.</p>
+                  <p className="text-white/80 text-base md:text-lg">Nossa equipe de especialistas oferece curadoria de interiores gratuita. Escolha os melhores sofás de luxo, poltronas e mesas de jantar, selecionados a dedo diretamente das maiores feiras de design para a sua casa em Ribeirão Preto.</p>
                 </div>
                 <a 
                   href="https://instagram.com/nexainteriores" 
@@ -323,7 +326,7 @@ const Collections = () => {
 
               <div className="glass p-8 md:p-12 rounded-[2rem] md:rounded-[3rem] text-center border-white/5">
                 <h3 className="text-xl md:text-3xl font-display font-bold mb-4">Deseja ver estas peças de perto?</h3>
-                <p className="text-white/60 text-sm md:text-base mb-8 max-w-lg mx-auto">
+                <p className="text-white/80 text-sm md:text-base mb-8 max-w-lg mx-auto">
                   Cada detalhe, textura e acabamento foi pensado para proporcionar uma experiência única. Visite nossa loja em Ribeirão Preto.
                 </p>
                 <a 
@@ -371,7 +374,7 @@ const VIPSection = () => {
               <span className="bg-gradient-to-r from-[#D4AF37] via-[#F9E498] to-[#D4AF37] bg-clip-text text-transparent"> Círculo VIP Nexa Interiores</span>
             </h2>
             
-            <p className="text-white/60 text-sm md:text-base mb-8 max-w-xl mx-auto leading-relaxed">
+            <p className="text-white/80 text-sm md:text-base mb-8 max-w-xl mx-auto leading-relaxed">
               Acesso prioritário a lançamentos de móveis planejados de luxo e mobiliário exclusivo em Ribeirão Preto.
             </p>
 
@@ -403,7 +406,7 @@ const VisitSection = () => {
           viewport={{ once: true }}
         >
           <h2 className="text-3xl md:text-6xl font-display font-bold mb-6 md:mb-8 tracking-tight">Loja de móveis em <br /> Ribeirão Preto: Visite-nos.</h2>
-          <p className="text-white/60 text-base md:text-lg mb-10 md:mb-12 max-w-md">
+          <p className="text-white/80 text-base md:text-lg mb-10 md:mb-12 max-w-md">
             Nossa flagship store de decoração sofisticada e design de interiores premium em Ribeirão Preto é um convite à imersão no mobiliário exclusivo.
           </p>
 
@@ -413,8 +416,8 @@ const VisitSection = () => {
                 <MapPin size={24} />
               </div>
               <div>
-                <h4 className="font-bold mb-1">Localização</h4>
-                <p className="text-white/60">Av. Norma Valério Corrêa, 316 - Jardim Botânico<br />Ribeirão Preto - SP</p>
+                <h3 className="font-bold mb-1">Localização</h3>
+                <p className="text-white/80">Av. Norma Valério Corrêa, 316 - Jardim Botânico<br />Ribeirão Preto - SP</p>
               </div>
             </div>
             <div className="flex items-start gap-4">
@@ -422,8 +425,8 @@ const VisitSection = () => {
                 <Clock size={24} />
               </div>
               <div>
-                <h4 className="font-bold mb-1">Horário de Atendimento</h4>
-                <p className="text-white/60">Segunda a Sexta: 09h às 19h<br />Sábado: 09h às 13h</p>
+                <h3 className="font-bold mb-1">Horário de Atendimento</h3>
+                <p className="text-white/80">Segunda a Sexta: 09h às 19h<br />Sábado: 09h às 13h</p>
               </div>
             </div>
             <div className="flex items-start gap-4">
@@ -431,8 +434,8 @@ const VisitSection = () => {
                 <Phone size={24} />
               </div>
               <div>
-                <h4 className="font-bold mb-1">Contato</h4>
-                <p className="text-white/60">(16) 99790-8686</p>
+                <h3 className="font-bold mb-1">Contato</h3>
+                <p className="text-white/80">(16) 99790-8686</p>
               </div>
             </div>
           </div>
@@ -482,7 +485,7 @@ const Footer = () => {
             <span className="bg-gradient-to-r from-[#D4AF37] via-[#F9E498] to-[#D4AF37] bg-clip-text text-transparent">NEXA</span>
             <span className="text-white/40 text-lg font-light tracking-[0.2em] mt-1">INTERIORES</span>
           </div>
-          <p className="text-white/40 text-sm max-w-xs">
+          <p className="text-white/60 text-sm max-w-xs">
             A melhor loja de móveis de alto padrão em Ribeirão Preto. Design de interiores premium, móveis de luxo e mobiliário exclusivo para sua casa.
           </p>
         </div>
@@ -631,6 +634,7 @@ const AboutSection = () => {
           <img 
             src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&q=80&w=2000" 
             alt="Fachada da Nexa Interiores - Loja de Móveis de Alto Padrão em Ribeirão Preto" 
+            loading="lazy"
             className="w-full h-full object-cover opacity-40"
             referrerPolicy="no-referrer"
           />
@@ -646,10 +650,10 @@ const AboutSection = () => {
           transition={{ duration: 0.8 }}
         >
           <span className="inline-block text-[#D4AF37] uppercase tracking-[0.3em] text-xs font-bold mb-8">Curadoria Gratuita • Direto das Feiras Mundiais</span>
-          <h1 className="text-xl md:text-5xl font-display font-medium mb-8 md:mb-12 leading-tight text-gradient">
+          <h2 className="text-xl md:text-5xl font-display font-medium mb-8 md:mb-12 leading-tight text-gradient">
             "Nosso principal diferencial é trazer mobiliário exclusivo direto das maiores e mais recentes feiras de mobiliário de alto padrão para sua casa."
-          </h1>
-          <p className="text-white/60 text-sm md:text-lg max-w-2xl mx-auto mb-10">Oferecemos curadoria de interiores totalmente gratuita. Te ajudamos a escolher os melhores sofás de luxo, poltronas, peças de decoração e mesas de jantar que harmonizam perfeitamente com a sua arquitetura.</p>
+          </h2>
+          <p className="text-white/80 text-sm md:text-lg max-w-2xl mx-auto mb-10">Oferecemos curadoria de interiores totalmente gratuita. Te ajudamos a escolher os melhores sofás de luxo, poltronas, peças de decoração e mesas de jantar que harmonizam perfeitamente com a sua arquitetura.</p>
           <a 
             href="https://wa.me/5516997908686?text=Olá! Gostaria de falar com um especialista sobre a Curadoria de Interiores Gratuita."
             target="_blank"
