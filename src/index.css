@@ -3,10 +3,17 @@
 @theme {
   --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
   --font-display: "Outfit", sans-serif;
+  --font-brand-serif: "Cinzel", serif;
   
   --color-gold: #D4AF37;
   --color-glass: rgba(255, 255, 255, 0.1);
   --color-glass-dark: rgba(0, 0, 0, 0.2);
+
+  /* Brand Realignment Colors (V2) */
+  --color-brand-gold-light: #F9E498;
+  --color-brand-gold: #D4AF37;
+  --color-brand-gold-dark: #8B6D1B;
+  --color-brand-bg-deep: #050706;
 }
 
 @layer base {

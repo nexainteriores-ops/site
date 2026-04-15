@@ -14,8 +14,20 @@
     <!-- Fonts: Preconnect and Link (Non-blocking) -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Outfit:wght@300;400;500;600;700&display=swap" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Outfit:wght@300;400;500;600;700&family=Cinzel:wght@400;700&display=swap" />
     
+    <style>
+      :root { --brand-gold: #D4AF37; }
+      body { margin: 0; background: #000; color: #fff; font-family: 'Inter', system-ui, sans-serif; }
+      .initial-skeleton { position: relative; height: 100vh; display: flex; align-items: center; justify-content: center; overflow: hidden; }
+      .skeleton-bg { position: absolute; inset: 0; background: #050706; }
+      .skeleton-image { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; opacity: 0.6; }
+      .skeleton-nav { position: fixed; top: 0; left: 0; right: 0; height: 80px; z-index: 50; display: flex; align-items: center; justify-content: space-between; padding: 0 24px; }
+      .brand-logo { font-family: 'Outfit', sans-serif; font-weight: bold; font-size: 24px; color: var(--brand-gold); }
+      .hero-content-skeleton { position: relative; z-index: 10; text-align: center; max-width: 896px; padding: 0 24px; }
+      .hero-h1-skeleton { font-family: 'Outfit', sans-serif; font-size: clamp(2rem, 8vw, 6rem); font-weight: bold; margin: 0 0 32px 0; background: linear-gradient(180deg, #fff 0%, rgba(255,255,255,0.5) 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+    </style>
+
     <!-- Open Graph / WhatsApp / Facebook -->
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://nexainteriores.com.br/" />
@@ -28,7 +40,19 @@
     <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
   </head>
   <body>
-    <div id="root"></div>
+    <div id="root">
+      <!-- Static Skeleton for Instant Paint (FCP) -->
+      <nav class="skeleton-nav">
+        <div class="brand-logo">NEXA <span style="font-size: 18px; font-weight: 300; opacity: 0.4; letter-spacing: 0.2em;">INTERIORES</span></div>
+      </nav>
+      <section class="initial-skeleton">
+        <div class="skeleton-bg"></div>
+        <img src="/images/hero.webp" alt="" class="skeleton-image" fetchpriority="high">
+        <div class="hero-content-skeleton">
+          <h1 class="hero-h1-skeleton">Mobiliário exclusivo direto das feiras para a sua casa.</h1>
+        </div>
+      </section>
+    </div>
     <script type="module" src="/src/main.tsx"></script>
   </body>
 </html>
