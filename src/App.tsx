@@ -379,7 +379,7 @@ const VIPSection = () => {
             </p>
 
             <motion.a 
-              href="https://wa.me/5516997908686?text=Olá! Gostaria de entrar no Grupo VIP da Nexa Interiores."
+              href="https://chat.whatsapp.com/IbkkmjexeIaBWmV5IhjFdz?mode=gi_t"
               target="_blank"
               rel="noopener noreferrer"
               whileHover={{ scale: 1.05 }}
