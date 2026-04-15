@@ -645,10 +645,20 @@ const AboutSection = () => {
           viewport={{ once: true }}
           transition={{ duration: 0.8 }}
         >
-          <span className="inline-block text-[#D4AF37] uppercase tracking-[0.3em] text-xs font-bold mb-8">Arquitetura de Interiores em Ribeirão Preto</span>
-          <h2 className="text-xl md:text-5xl font-display font-medium mb-8 md:mb-12 leading-tight text-gradient">
-            "Nossa missão é transformar projetos residenciais em experiências sensoriais, onde cada móvel de luxo e alto padrão conta uma história de sofisticação e design de interiores premium."
-          </h2>
+          <span className="inline-block text-[#D4AF37] uppercase tracking-[0.3em] text-xs font-bold mb-8">Curadoria Gratuita • Direto das Feiras Mundiais</span>
+          <h1 className="text-xl md:text-5xl font-display font-medium mb-8 md:mb-12 leading-tight text-gradient">
+            "Nosso principal diferencial é trazer mobiliário exclusivo direto das maiores e mais recentes feiras de mobiliário de alto padrão para sua casa."
+          </h1>
+          <p className="text-white/60 text-sm md:text-lg max-w-2xl mx-auto mb-10">Oferecemos curadoria de interiores totalmente gratuita. Te ajudamos a escolher os melhores sofás de luxo, poltronas, peças de decoração e mesas de jantar que harmonizam perfeitamente com a sua arquitetura.</p>
+          <a 
+            href="https://wa.me/5516997908686?text=Olá! Gostaria de falar com um especialista sobre a Curadoria de Interiores Gratuita."
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-3 px-8 py-3 md:px-10 md:py-4 bg-gradient-to-r from-[#D4AF37] to-[#B8860B] text-black rounded-full font-bold text-sm md:text-base hover:shadow-[0_0_30px_rgba(212,175,55,0.4)] transition-all mx-auto mb-12"
+          >
+            Falar pelo WhatsApp
+            <ArrowRight size={16} />
+          </a>
           <div className="w-20 h-px bg-gradient-to-r from-transparent via-[#D4AF37] to-transparent mx-auto" />
         </motion.div>
       </div>
