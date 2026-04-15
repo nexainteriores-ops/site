@@ -137,7 +137,7 @@ const FeatureCard = ({ title, description, image, onClick }: any) => {
       <img 
         src={image} 
         alt={title} 
-        className="absolute inset-0 w-full h-full object-cover opacity-60 group-hover:scale-110 transition-transform duration-1000"
+        className={`absolute inset-0 w-full h-full object-cover opacity-60 group-hover:scale-110 transition-transform duration-1000 ${title === "Sofá Elegance" ? "scale-y-[-1] group-hover:scale-y-[-1.1]" : ""}`}
       />
       <div className="absolute inset-0 bg-gradient-to-t from-brand-bg-deep via-brand-bg-deep/20 to-transparent" />
       <div className="absolute bottom-0 left-0 p-8">

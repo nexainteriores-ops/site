@@ -59,7 +59,7 @@ const CollectionItem = ({ item, index }: CollectionItemProps) => {
         alt={item.name} 
         loading="lazy"
         onError={() => setItemImg("https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?auto=format&fit=crop&q=80&w=400")}
-        className="absolute inset-0 w-full h-full object-cover opacity-70 group-hover:scale-110 transition-transform duration-700"
+        className={`absolute inset-0 w-full h-full object-cover opacity-70 group-hover:scale-110 transition-transform duration-700 ${item.name === "Sofá Elegance" ? "scale-y-[-1] group-hover:scale-y-[-1.1]" : ""}`}
         referrerPolicy="no-referrer"
       />
       <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/20 to-transparent opacity-80" />
