@@ -440,16 +440,29 @@ const VisitSection = () => {
             </div>
           </div>
 
-          <motion.a 
-            href="https://www.google.com/maps/search/?api=1&query=Avenida+Norma+Valério+Corrêa+316+Ribeirão+Preto+SP"
-            target="_blank"
-            rel="noopener noreferrer"
-            whileHover={{ scale: 1.02 }}
-            whileTap={{ scale: 0.98 }}
-            className="mt-10 md:mt-12 inline-block w-full md:w-auto px-8 py-4 md:px-12 md:py-5 bg-white text-black rounded-full font-bold text-base md:text-lg hover:bg-white/90 transition-all shadow-2xl shadow-white/10 text-center"
-          >
-            Abrir no Google Maps
-          </motion.a>
+          <div className="mt-10 md:mt-12 flex flex-col sm:flex-row gap-4">
+            <motion.a 
+              href="https://wa.me/5516997908686?text=Olá! Gostaria de agendar minha Curadoria de Interiores Gratuita."
+              target="_blank"
+              rel="noopener noreferrer"
+              whileHover={{ scale: 1.02 }}
+              whileTap={{ scale: 0.98 }}
+              className="w-full sm:w-auto px-8 py-4 md:px-10 md:py-5 bg-gradient-to-r from-[#D4AF37] to-[#B8860B] text-black rounded-full font-bold text-base md:text-lg hover:brightness-110 transition-all flex items-center justify-center gap-2 group shadow-[0_0_20px_rgba(212,175,55,0.4)]"
+            >
+              Agendar Curadoria Gratuita
+              <ChevronRight size={18} className="group-hover:translate-x-1 transition-transform" />
+            </motion.a>
+            <motion.a 
+              href="https://www.google.com/maps/search/?api=1&query=Avenida+Norma+Valério+Corrêa+316+Ribeirão+Preto+SP"
+              target="_blank"
+              rel="noopener noreferrer"
+              whileHover={{ scale: 1.02 }}
+              whileTap={{ scale: 0.98 }}
+              className="w-full sm:w-auto px-8 py-4 md:px-10 md:py-5 bg-white text-black rounded-full font-bold text-base md:text-lg hover:bg-white/90 transition-all shadow-2xl shadow-white/10 text-center flex items-center justify-center"
+            >
+              Abrir no Google Maps
+            </motion.a>
+          </div>
         </motion.div>
 
         <motion.div 
