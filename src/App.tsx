@@ -645,14 +645,16 @@ const AboutSection = () => {
           className="absolute inset-0 w-full h-[120%] -top-[10%]"
         >
           <img 
-            src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&q=80&w=2000" 
+            src="/images/faxada.webp" 
             alt="Fachada da Nexa Interiores - Loja de Móveis de Alto Padrão em Ribeirão Preto" 
             loading="lazy"
-            className="w-full h-full object-cover opacity-40"
-            referrerPolicy="no-referrer"
+            className="w-full h-full object-cover opacity-35"
           />
         </motion.div>
-        <div className="absolute inset-0 bg-gradient-to-b from-black via-black/80 to-black" />
+        {/* Gradient forte para garantir legibilidade do texto e do logo */}
+        <div className="absolute inset-0 bg-gradient-to-b from-black/70 via-black/50 to-black/80" />
+        {/* Toque quente em dourado para harmonizar com a paleta da marca */}
+        <div className="absolute inset-0 bg-[#3A2800]/20" />
       </div>
 
       <div className="relative z-10 max-w-4xl mx-auto text-center">
