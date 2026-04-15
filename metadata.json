@@ -1,0 +1,5 @@
+{
+  "name": "Nexa Interiores",
+  "description": "Loja de móveis de luxo e alto padrão em Ribeirão Preto. Design de interiores premium, mobiliário exclusivo e decoração sofisticada para projetos residenciais, apartamentos de luxo e casas de alto padrão.",
+  "requestFramePermissions": ["geolocation"]
+}

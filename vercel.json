@@ -1,0 +1,15 @@
+{
+  "redirects": [
+    {
+      "source": "/whats",
+      "destination": "https://chat.whatsapp.com/IbkkmjexeIaBWmV5IhjFdz?mode=gi_t",
+      "permanent": true
+    }
+  ],
+  "rewrites": [
+    {
+      "source": "/(.*)",
+      "destination": "/index.html"
+    }
+  ]
+}
