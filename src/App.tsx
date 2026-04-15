@@ -540,9 +540,9 @@ const SEOData = () => {
       "@type": "FurnitureStore",
       "name": "Nexa Interiores - Loja de Móveis de Alto Padrão em Ribeirão Preto",
       "description": "Nexa Interiores traz mobiliário exclusivo direto das maiores e mais recentes feiras de mobiliário de alto padrão para a sua casa. Especialistas em sofás, poltronas e salas de jantar.",
-      "image": "/images/og-image.webp",
+      "image": "https://nexainteriores.com.br/images/og-image.webp",
       "@id": "https://nexainteriores.com.br",
-      "url": window.location.href,
+      "url": "https://nexainteriores.com.br",
       "telephone": "+5516997908686",
       "address": {
         "@type": "PostalAddress",
@@ -585,8 +585,7 @@ const SEOData = () => {
       "@type": "Service",
       "name": "Curadoria de Interiores Gratuita",
       "provider": {
-        "@type": "FurnitureStore",
-        "name": "Nexa Interiores"
+        "@id": "https://nexainteriores.com.br"
       },
       "areaServed": {
         "@type": "City",
