@@ -68,11 +68,14 @@ const Hero = () => {
     <section className="relative h-screen flex items-center justify-center overflow-hidden">
       <div className="absolute inset-0 z-0">
         <img 
-          src="https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&q=80&w=2000" 
+          src="/images/hero.webp" 
           alt="Loja de móveis em Ribeirão Preto - Nexa Interiores: Mobiliário exclusivo e design de interiores premium" 
           className="w-full h-full object-cover opacity-60 scale-105"
           referrerPolicy="no-referrer"
           fetchPriority="high"
+          width="1920"
+          height="1080"
+          decoding="async"
         />
         <div className="absolute inset-0 bg-gradient-to-b from-black/20 via-black/40 to-black" />
       </div>
@@ -223,7 +226,7 @@ const Collections = () => {
         { name: "Sofá Clássico", image: "/images/sofas/s3.webp" },
         { name: "Sofá Minimalista", image: "/images/sofas/s4.webp" },
         { name: "Sofá Modular", image: "/images/sofas/s5.webp" },
-        { name: "Sofá Elegance", image: "/images/sofas/s6.webp" }
+        { name: "Sofá Elegance", image: "/images/sofas/s6_v3.webp" }
       ]
     },
     {
@@ -537,7 +540,7 @@ const SEOData = () => {
       "@type": "FurnitureStore",
       "name": "Nexa Interiores - Loja de Móveis de Alto Padrão em Ribeirão Preto",
       "description": "Nexa Interiores traz mobiliário exclusivo direto das maiores e mais recentes feiras de mobiliário de alto padrão para a sua casa. Especialistas em sofás, poltronas e salas de jantar.",
-      "image": "https://images.unsplash.com/photo-1618221195710-dd6b41faaea6",
+      "image": "/images/og-image.webp",
       "@id": "https://nexainteriores.com.br",
       "url": window.location.href,
       "telephone": "+5516997908686",
