@@ -81,9 +81,9 @@ const Hero = () => {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.2 }}
-          className="inline-block text-white/60 uppercase tracking-[0.3em] text-xs font-medium mb-6"
+          className="inline-block text-[#D4AF37] uppercase tracking-[0.3em] text-xs font-bold mb-6"
         >
-          Móveis de Luxo • Design de Interiores Premium em Ribeirão Preto
+          Curadoria de Interiores Gratuita • Ribeirão Preto
         </motion.span>
         <motion.h1 
           initial={{ opacity: 0, y: 30 }}
@@ -91,7 +91,7 @@ const Hero = () => {
           transition={{ delay: 0.4 }}
           className="text-4xl md:text-8xl font-display font-bold tracking-tight mb-8 text-gradient"
         >
-          Mobiliário exclusivo <br /> para casas de <br /> alto padrão.
+          Mobiliário exclusivo <br /> direto das feiras <br /> para a sua casa.
         </motion.h1>
         <motion.div 
           initial={{ opacity: 0, y: 20 }}
@@ -100,17 +100,19 @@ const Hero = () => {
           className="flex flex-col sm:flex-row items-center justify-center gap-4"
         >
           <a 
-            href="#visita" 
-            className="w-full sm:w-auto px-6 py-3 md:px-8 md:py-4 bg-white text-black rounded-full font-medium hover:bg-white/90 transition-all flex items-center justify-center gap-2 group text-sm md:text-base"
+            href="https://wa.me/5516997908686?text=Olá! Gostaria de agendar minha Curadoria de Interiores Gratuita."
+            target="_blank"
+            rel="noopener noreferrer"
+            className="w-full sm:w-auto px-6 py-3 md:px-8 md:py-4 bg-gradient-to-r from-[#D4AF37] to-[#B8860B] text-black rounded-full font-bold hover:brightness-110 transition-all flex items-center justify-center gap-2 group text-sm md:text-base shadow-[0_0_20px_rgba(212,175,55,0.4)]"
           >
-            Agendar Visita
+            Agendar Curadoria Gratuita
             <ChevronRight size={16} className="group-hover:translate-x-1 transition-transform" />
           </a>
           <a 
-            href="#colecoes" 
-            className="w-full sm:w-auto px-6 py-3 md:px-8 md:py-4 glass rounded-full font-medium hover:bg-white/10 transition-all text-sm md:text-base"
+            href="#visita" 
+            className="w-full sm:w-auto px-6 py-3 md:px-8 md:py-4 glass rounded-full font-bold hover:bg-white/10 transition-all text-sm md:text-base text-white"
           >
-            Ver Coleções
+            Visitar a Loja Física
           </a>
         </motion.div>
       </div>
@@ -208,45 +210,45 @@ const Collections = () => {
 
   const collections = [
     {
-      id: "living",
-      title: "Salas de Estar de Luxo",
-      description: "Sofás de luxo e poltronas de design que definem o conceito de decoração sofisticada para seu living.",
-      image: "https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?auto=format&fit=crop&q=80&w=800",
+      id: "sofas",
+      title: "Sofás",
+      description: "Sofás de luxo e design que definem o conceito de conforto e sofisticação para o seu ambiente.",
+      image: "/images/sofas/s1.jpg",
       items: [
-        { name: "Sofá de Luxo Nexa", image: "https://images.unsplash.com/photo-1555041469-a586c61ea9bc?auto=format&fit=crop&q=80&w=400" },
-        { name: "Poltrona de Design Velvet", image: "https://images.unsplash.com/photo-1592078615290-033ee584e267?auto=format&fit=crop&q=80&w=400" },
-        { name: "Mesa de Centro Marble", image: "https://images.unsplash.com/photo-1533090161767-e6ffed986c88?auto=format&fit=crop&q=80&w=400" },
-        { name: "Aparador Minimalist", image: "https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?auto=format&fit=crop&q=80&w=400" },
-        { name: "Luminária de Piso Arch", image: "https://images.unsplash.com/photo-1507473885765-e6ed057f782c?auto=format&fit=crop&q=80&w=400" },
-        { name: "Tapete Silk Touch", image: "https://images.unsplash.com/photo-1575414003591-ece8d0416c7a?auto=format&fit=crop&q=80&w=400" }
+        { name: "Sofá Design", image: "/images/sofas/s1.jpg" },
+        { name: "Sofá Contemporâneo", image: "/images/sofas/s2.jpg" },
+        { name: "Sofá Clássico", image: "/images/sofas/s3.jpg" },
+        { name: "Sofá Minimalista", image: "/images/sofas/s4.jpg" },
+        { name: "Sofá Modular", image: "/images/sofas/s5.jpg" },
+        { name: "Sofá Elegance", image: "/images/sofas/s6.jpeg" }
+      ]
+    },
+    {
+      id: "poltronas",
+      title: "Poltronas",
+      description: "Poltronas de design exclusivo, unindo ergonomia, arte e alto padrão para sua sala ou dormitório.",
+      image: "/images/poltronas/p1.jpg",
+      items: [
+        { name: "Poltrona Exclusiva", image: "/images/poltronas/74594662-DCB1-42B4-BB1D-B1A85BD3FDC0.jpg" },
+        { name: "Poltrona Classic", image: "/images/poltronas/p1.jpg" },
+        { name: "Poltrona Velvet", image: "/images/poltronas/p2.jpg" },
+        { name: "Poltrona Lounge", image: "/images/poltronas/p4.jpg" },
+        { name: "Poltrona Modern", image: "/images/poltronas/p5.jpg" },
+        { name: "Poltrona Art", image: "/images/poltronas/p7.jpg" }
       ]
     },
     {
       id: "dining",
-      title: "Salas de Jantar de Alto Padrão",
+      title: "Salas de Jantar",
       description: "Mesas de jantar de alto padrão e cadeiras exclusivas para momentos inesquecíveis em sua residência.",
-      image: "https://images.unsplash.com/photo-1615066390971-03e4e1c36ddf?auto=format&fit=crop&q=80&w=800",
+      image: "/images/salas-de-jantar/m2.jpg",
       items: [
-        { name: "Mesa de Jantar de Alto Padrão", image: "https://images.unsplash.com/photo-1577140917170-285929fb55b7?auto=format&fit=crop&q=80&w=400" },
-        { name: "Cadeira Master Design", image: "https://images.unsplash.com/photo-1567538096630-e0c55bd6374c?auto=format&fit=crop&q=80&w=400" },
-        { name: "Buffet High Gloss", image: "https://images.unsplash.com/photo-1595428774223-ef52624120d2?auto=format&fit=crop&q=80&w=400" },
-        { name: "Lustre Crystal Cascade", image: "https://images.unsplash.com/photo-1543157145-f78c636d023d?auto=format&fit=crop&q=80&w=400" },
-        { name: "Banqueta Elegance", image: "https://images.unsplash.com/photo-1503602642458-232111445657?auto=format&fit=crop&q=80&w=400" },
-        { name: "Cristaleira Glass View", image: "https://images.unsplash.com/photo-1594026112284-02bb6f3352fe?auto=format&fit=crop&q=80&w=400" }
-      ]
-    },
-    {
-      id: "private",
-      title: "Dormitórios de Luxo",
-      description: "Móveis planejados de luxo para quartos e suítes que são verdadeiros refúgios de tranquilidade.",
-      image: "https://images.unsplash.com/photo-1616594039964-ae9021a400a0?auto=format&fit=crop&q=80&w=800",
-      items: [
-        { name: "Cama King Comfort", image: "https://images.unsplash.com/photo-1616137422495-1e9e46e2aa77?auto=format&fit=crop&q=80&w=400" },
-        { name: "Mesa de Cabeceira Lux", image: "https://images.unsplash.com/photo-1532372320572-cda25653a26d?auto=format&fit=crop&q=80&w=400" },
-        { name: "Closet Sob Medida Luxo", image: "https://images.unsplash.com/photo-1558997519-83ea9252edf8?auto=format&fit=crop&q=80&w=400" },
-        { name: "Penteadeira Glamour", image: "https://images.unsplash.com/photo-1594904351111-a072f80b1a71?auto=format&fit=crop&q=80&w=400" },
-        { name: "Recamier Velvet", image: "https://images.unsplash.com/photo-1540518614846-7eded433c457?auto=format&fit=crop&q=80&w=400" },
-        { name: "Cômoda Executive", image: "https://images.unsplash.com/photo-1595515106969-1ce29566ff1c?auto=format&fit=crop&q=80&w=400" }
+        { name: "Mesa de Jantar de Alto Padrão", image: "/images/salas-de-jantar/D976339B-E0C1-4249-A47F-E6C2C9FB7EF7.jpg" },
+        { name: "Sala de Jantar Elegance", image: "/images/salas-de-jantar/IMG_6215.jpg" },
+        { name: "Conjunto Jantar Moderno", image: "/images/salas-de-jantar/m1].jpg" },
+        { name: "Mesa de Jantar Exclusiva", image: "/images/salas-de-jantar/m2.jpg" },
+        { name: "Mesa de Jantar Clássica", image: "/images/salas-de-jantar/m3.jpg" },
+        { name: "Sala de Jantar Completa", image: "/images/salas-de-jantar/m4.jpg" }
       ]
     }
   ];
@@ -265,9 +267,9 @@ const Collections = () => {
               exit={{ opacity: 0, y: -20 }}
             >
               <div className="flex flex-col md:flex-row md:items-end justify-between mb-12 md:mb-16 gap-8">
-                <div className="max-w-2xl">
-                  <h2 className="text-3xl md:text-5xl font-display font-bold mb-4 md:mb-6 tracking-tight">Móveis de luxo e <br /> alto padrão em Ribeirão Preto.</h2>
-                  <p className="text-white/60 text-base md:text-lg">Nossa curadoria exclusiva de mobiliário contemporâneo une a arquitetura de interiores à tradição do alto padrão.</p>
+                <div className="max-w-3xl">
+                  <h2 className="text-3xl md:text-5xl font-display font-bold mb-4 md:mb-6 tracking-tight">Catálogo Exclusivo. <br /> Curadoria Gratuita.</h2>
+                  <p className="text-white/60 text-base md:text-lg">Nossa equipe de especialistas oferece curadoria de interiores gratuita. Escolha os melhores sofás de luxo, poltronas e mesas de jantar, selecionados a dedo diretamente das maiores feiras de design para a sua casa em Ribeirão Preto.</p>
                 </div>
                 <a 
                   href="https://instagram.com/nexainteriores" 
@@ -513,47 +515,94 @@ const Footer = () => {
 };
 
 const SEOData = () => {
-  const structuredData = {
-    "@context": "https://schema.org",
-    "@type": "FurnitureStore",
-    "name": "Nexa Interiores - Loja de Móveis de Alto Padrão em Ribeirão Preto",
-    "description": "Nexa Interiores é a referência em móveis de luxo e alto padrão em Ribeirão Preto. Oferecemos design de interiores premium, sofás de luxo, mesas de jantar de alto padrão e mobiliário exclusivo para projetos residenciais, apartamentos de luxo e casas de alto padrão.",
-    "image": "https://images.unsplash.com/photo-1618221195710-dd6b41faaea6",
-    "@id": "https://nexainteriores.com.br",
-    "url": window.location.href,
-    "telephone": "+5516997908686",
-    "address": {
-      "@type": "PostalAddress",
-      "streetAddress": "Av. Norma Valério Corrêa, 316",
-      "addressLocality": "Ribeirão Preto",
-      "addressRegion": "SP",
-      "postalCode": "14021-614",
-      "addressCountry": "BR"
-    },
-    "geo": {
-      "@type": "GeoCoordinates",
-      "latitude": -21.215317,
-      "longitude": -47.803685
-    },
-    "openingHoursSpecification": [
-      {
-        "@type": "OpeningHoursSpecification",
-        "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
-        "opens": "09:00",
-        "closes": "19:00"
+  const structuredData = [
+    {
+      "@context": "https://schema.org",
+      "@type": "FurnitureStore",
+      "name": "Nexa Interiores - Loja de Móveis de Alto Padrão em Ribeirão Preto",
+      "description": "Nexa Interiores traz mobiliário exclusivo direto das maiores e mais recentes feiras de mobiliário de alto padrão para a sua casa. Especialistas em sofás, poltronas e salas de jantar.",
+      "image": "https://images.unsplash.com/photo-1618221195710-dd6b41faaea6",
+      "@id": "https://nexainteriores.com.br",
+      "url": window.location.href,
+      "telephone": "+5516997908686",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Av. Norma Valério Corrêa, 316",
+        "addressLocality": "Ribeirão Preto",
+        "addressRegion": "SP",
+        "postalCode": "14021-614",
+        "addressCountry": "BR"
       },
-      {
-        "@type": "OpeningHoursSpecification",
-        "dayOfWeek": "Saturday",
-        "opens": "09:00",
-        "closes": "13:00"
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": -21.215317,
+        "longitude": -47.803685
+      },
+      "areaServed": {
+        "@type": "City",
+        "name": "Ribeirão Preto e Região"
+      },
+      "openingHoursSpecification": [
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+          "opens": "09:00",
+          "closes": "19:00"
+        },
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": "Saturday",
+          "opens": "09:00",
+          "closes": "13:00"
+        }
+      ],
+      "sameAs": [
+        "https://instagram.com/nexainteriores"
+      ],
+      "priceRange": "$$$$"
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "Service",
+      "name": "Curadoria de Interiores Gratuita",
+      "provider": {
+        "@type": "FurnitureStore",
+        "name": "Nexa Interiores"
+      },
+      "areaServed": {
+        "@type": "City",
+        "name": "Ribeirão Preto"
+      },
+      "description": "Serviço exclusivo e gratuito de curadoria de interiores. Ajudamos a harmonizar sofás, poltronas, salas de jantar e decoração para projetos de alto padrão.",
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "BRL"
       }
-    ],
-    "sameAs": [
-      "https://instagram.com/nexainteriores"
-    ],
-    "priceRange": "$$$$"
-  };
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "A Nexa Interiores cobra pela curadoria de interiores?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Não. Oferecemos curadoria de interiores de alto padrão de forma totalmente gratuita aos nossos clientes em nossa loja de Ribeirão Preto. Basta agendar pelo WhatsApp."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "De onde vêm os móveis da Nexa Interiores?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Temos o diferencial de ter mobiliário exclusivo, direto das maiores e mais recentes feiras de mobiliário de alto padrão internacional e nacional. Focamos em sofás de luxo, poltronas, salas de jantar e itens decorativos exclusivos."
+          }
+        }
+      ]
+    }
+  ];
 
   return (
     <script type="application/ld+json">
