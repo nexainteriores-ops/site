@@ -2,6 +2,7 @@ import { motion, useScroll, useTransform, AnimatePresence } from 'motion/react';
 import { MapPin, Instagram, ArrowRight, Menu, X, ChevronRight, Phone, Clock, ArrowLeft } from 'lucide-react';
 import { useState, useRef, Suspense } from 'react';
 import { cn } from './lib/utils';
+import { Analytics } from '@vercel/analytics/react';
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -281,6 +282,7 @@ export default function V2() {
         <AboutSection />
         <Footer />
       </main>
+      <Analytics />
     </div>
   );
 }

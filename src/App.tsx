@@ -1,6 +1,7 @@
 import { motion, useScroll, useTransform, AnimatePresence } from 'motion/react';
 import { Instagram, Menu, X, ChevronRight } from 'lucide-react';
 import { useState, lazy, Suspense } from 'react';
+import { Analytics } from '@vercel/analytics/react';
 
 // Correct Lazy load from external files to enable proper code splitting
 const Collections = lazy(() => import('./components/Collections').then(m => ({ default: m.Collections })));
@@ -153,6 +154,7 @@ export default function App() {
       <Suspense fallback={null}>
         <Footer />
       </Suspense>
+      <Analytics />
     </div>
   );
 }
