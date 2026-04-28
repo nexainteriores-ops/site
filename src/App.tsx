@@ -14,7 +14,7 @@ const SEOData = lazy(() => import('./components/SEOData').then(m => ({ default: 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const { scrollY } = useScroll();
-  const backgroundColor = useTransform(scrollY, [0, 100], ['rgba(0,0,0,0)', 'rgba(0,0,0,0.8)']);
+  const backgroundColor = useTransform(scrollY, [0, 100], ['rgba(6, 18, 15, 0)', 'rgba(6, 18, 15, 1)']);
 
   return (
     <motion.nav 
@@ -25,10 +25,9 @@ const Navbar = () => {
         <motion.div 
           initial={{ opacity: 0, x: -20 }}
           animate={{ opacity: 1, x: 0 }}
-          className="text-2xl font-display font-bold tracking-tighter flex items-center gap-2"
+          className="flex items-center h-full"
         >
-          <span className="bg-gradient-to-r from-[#D4AF37] via-[#F9E498] to-[#D4AF37] bg-clip-text text-transparent">NEXA</span>
-          <span className="text-white/40 text-lg font-light tracking-[0.2em] mt-1">INTERIORES</span>
+          <img src="/logo.png" alt="Nexa Interiores" className="h-20 w-auto object-cover" />
         </motion.div>
 
         <div className="hidden md:flex items-center gap-8 text-sm font-medium text-white/70">
@@ -73,7 +72,7 @@ const Navbar = () => {
 
 const Hero = () => {
   return (
-    <section className="relative h-screen flex items-center justify-center overflow-hidden bg-[#050706]">
+    <section className="relative h-screen flex items-center justify-center overflow-hidden bg-[#06120F]">
       <div className="absolute inset-0 z-0">
         <img 
           src="/images/hero.webp" 
@@ -85,7 +84,7 @@ const Hero = () => {
           height="1080"
           decoding="async"
         />
-        <div className="absolute inset-0 bg-gradient-to-b from-[#050706]/20 via-[#050706]/40 to-[#050706]" />
+        <div className="absolute inset-0 bg-gradient-to-b from-[#06120F]/20 via-[#06120F]/40 to-[#06120F]" />
       </div>
 
       <div className="relative z-10 text-center px-6 max-w-4xl">
@@ -137,14 +136,14 @@ const Hero = () => {
 
 export default function App() {
   return (
-    <div className="min-h-screen font-sans selection:bg-white selection:text-black bg-[#050706]">
+    <div className="min-h-screen font-sans selection:bg-white selection:text-black bg-[#06120F]">
       <Suspense fallback={null}>
         <SEOData />
       </Suspense>
       <Navbar />
       <main>
         <Hero />
-        <Suspense fallback={<div className="h-screen bg-[#050706]" />}>
+        <Suspense fallback={<div className="h-screen bg-[#06120F]" />}>
           <Collections />
           <AboutSection />
           <VIPSection />

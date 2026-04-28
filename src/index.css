@@ -13,7 +13,11 @@
   --color-brand-gold-light: #F9E498;
   --color-brand-gold: #D4AF37;
   --color-brand-gold-dark: #8B6D1B;
-  --color-brand-bg-deep: #050706;
+  --color-brand-bg-deep: #06120F;
+
+  /* Brand Green Colors */
+  --color-brand-green: #A5C4B0;
+  --color-brand-green-dark: #1A3A32;
 }
 
 @layer base {

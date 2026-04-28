@@ -2,7 +2,6 @@ import { motion, useScroll, useTransform, AnimatePresence } from 'motion/react';
 import { MapPin, Instagram, ArrowRight, Menu, X, ChevronRight, Phone, Clock, ArrowLeft } from 'lucide-react';
 import { useState, useRef, Suspense } from 'react';
 import { cn } from './lib/utils';
-import { Analytics } from '@vercel/analytics/react';
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -26,8 +25,8 @@ const Navbar = () => {
         <div className="hidden md:flex items-center gap-8 text-sm font-medium text-white/70">
           <a href="#colecoes" className="hover:text-white transition-colors">Coleções</a>
           <a href="#sobre" className="hover:text-white transition-colors">A Marca</a>
-          <a href="#vip" className="text-brand-gold hover:text-brand-gold-light transition-colors flex items-center gap-1">
-            <span className="w-1.5 h-1.5 rounded-full bg-brand-gold animate-pulse" />
+          <a href="#vip" className="text-brand-gold hover:text-brand-green transition-colors flex items-center gap-1.5 group">
+            <span className="w-1.5 h-1.5 rounded-full bg-brand-green animate-pulse shadow-[0_0_8px_rgba(165,196,176,0.6)]" />
             Grupo VIP
           </a>
           <a href="#visita" className="hover:text-white transition-colors">Visite-nos</a>
@@ -190,7 +189,7 @@ const Collections = () => {
       <div className="max-w-7xl mx-auto">
         <div className="mb-20 text-center max-w-3xl mx-auto">
           <h2 className="text-4xl md:text-6xl font-brand-serif font-bold mb-8 tracking-tight">Curadoria Exclusiva.</h2>
-          <div className="w-24 h-1 bg-brand-gold mx-auto mb-8" />
+          <div className="w-40 h-1 bg-gradient-to-r from-brand-gold via-brand-green to-brand-gold mx-auto mb-8 opacity-80" />
           <p className="text-white/70 text-lg leading-relaxed">Selecionamos as melhores peças diretamente das maiores feiras de design para harmonizar com seu projeto de alto padrão em Ribeirão Preto.</p>
         </div>
 
@@ -242,7 +241,7 @@ const Footer = () => {
           <div className="flex items-center mb-6 h-20">
             <img src="/logo.png" alt="Nexa Interiores" className="h-20 w-auto object-cover" />
           </div>
-          <p className="text-white/40 text-sm max-w-xs leading-relaxed">
+          <p className="text-white/60 text-sm max-w-xs leading-relaxed">
             Mobiliário de alto padrão e curadoria gratuita em Ribeirão Preto. Elevando seu conceito de morar bem.
           </p>
         </div>
@@ -262,15 +261,15 @@ const Footer = () => {
           </div>
         </div>
       </div>
-      <div className="max-w-7xl mx-auto mt-20 pt-8 border-t border-white/5 flex justify-between items-center text-[10px] text-white/20 uppercase tracking-widest">
+      <div className="max-w-7xl mx-auto mt-20 pt-8 border-t border-white/5 flex justify-between items-center text-[10px] text-white/60 uppercase tracking-widest">
         <span>© 2026 Nexa Interiores</span>
-        <span>Aesthetics by Antigravity</span>
+        <span className="text-brand-gold/80 italic font-brand-serif">Aesthetics by Antigravity</span>
       </div>
     </footer>
   );
 };
 
-export default function V2() {
+export default function V3() {
   return (
     <div className="min-h-screen font-sans selection:bg-brand-gold selection:text-black bg-brand-bg-deep text-white">
       <Navbar />
@@ -280,7 +279,6 @@ export default function V2() {
         <AboutSection />
         <Footer />
       </main>
-      <Analytics />
     </div>
   );
 }
