@@ -1,6 +1,6 @@
 import { motion, useScroll, useTransform, AnimatePresence } from 'motion/react';
 import { MapPin, Instagram, ArrowRight, Menu, X, ChevronRight, Phone, Clock, ArrowLeft } from 'lucide-react';
-import { useState, useRef, Suspense } from 'react';
+import { useState, useRef, Suspense, useEffect } from 'react';
 import { cn } from './lib/utils';
 
 const Navbar = () => {
@@ -270,6 +270,16 @@ const Footer = () => {
 };
 
 export default function V3() {
+  useEffect(() => {
+    const loader = document.getElementById('app-loader');
+    if (loader) {
+      loader.style.opacity = '0';
+      setTimeout(() => {
+        loader.remove();
+      }, 500); // Wait for transition to finish
+    }
+  }, []);
+
   return (
     <div className="min-h-screen font-sans selection:bg-brand-gold selection:text-black bg-brand-bg-deep text-white">
       <Navbar />

@@ -1,5 +1,6 @@
 import { motion } from 'motion/react';
 import { ArrowRight } from 'lucide-react';
+import { trackContact } from '../lib/fbPixel';
 
 export const VIPSection = () => {
   return (
@@ -40,6 +41,7 @@ export const VIPSection = () => {
               rel="noopener noreferrer"
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
+              onClick={() => trackContact()}
               className="inline-flex items-center gap-3 px-8 py-3 md:px-10 md:py-4 bg-gradient-to-r from-[#D4AF37] to-[#B8860B] text-black rounded-full font-bold text-sm md:text-base hover:shadow-[0_0_30px_rgba(212,175,55,0.3)] transition-all"
             >
               Entrar no Grupo VIP

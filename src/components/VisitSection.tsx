@@ -1,5 +1,6 @@
 import { motion } from 'motion/react';
 import { MapPin, Clock, Phone, ChevronRight } from 'lucide-react';
+import { trackLead, trackFindLocation } from '../lib/fbPixel';
 
 export const VisitSection = () => {
   return (
@@ -52,6 +53,7 @@ export const VisitSection = () => {
               rel="noopener noreferrer"
               whileHover={{ scale: 1.02 }}
               whileTap={{ scale: 0.98 }}
+              onClick={() => trackLead('visit_section')}
               className="w-full sm:w-auto px-8 py-4 md:px-10 md:py-5 bg-gradient-to-r from-[#D4AF37] to-[#B8860B] text-black rounded-full font-bold text-base md:text-lg hover:brightness-110 transition-all flex items-center justify-center gap-2 group shadow-[0_0_20px_rgba(212,175,55,0.4)]"
             >
               Agendar Curadoria Gratuita
@@ -63,6 +65,7 @@ export const VisitSection = () => {
               rel="noopener noreferrer"
               whileHover={{ scale: 1.02 }}
               whileTap={{ scale: 0.98 }}
+              onClick={() => trackFindLocation()}
               className="w-full sm:w-auto px-8 py-4 md:px-10 md:py-5 bg-white text-black rounded-full font-bold text-base md:text-lg hover:bg-white/90 transition-all shadow-2xl shadow-white/10 text-center flex items-center justify-center"
             >
               Abrir no Google Maps

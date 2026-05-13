@@ -1,7 +1,8 @@
 import { motion, useScroll, useTransform, AnimatePresence } from 'motion/react';
 import { Instagram, Menu, X, ChevronRight } from 'lucide-react';
-import { useState, lazy, Suspense } from 'react';
+import { useState, lazy, Suspense, useEffect } from 'react';
 import { Analytics } from '@vercel/analytics/react';
+import { trackLead } from './lib/fbPixel';
 
 // Correct Lazy load from external files to enable proper code splitting
 const Collections = lazy(() => import('./components/Collections').then(m => ({ default: m.Collections })));
@@ -99,6 +100,7 @@ const Hero = () => {
             href="https://wa.me/5516997908686?text=Olá! Gostaria de agendar minha Curadoria de Interiores Gratuita."
             target="_blank"
             rel="noopener noreferrer"
+            onClick={() => trackLead('hero')}
             className="w-full sm:w-auto px-6 py-3 md:px-8 md:py-4 bg-gradient-to-r from-[#D4AF37] to-[#B8860B] text-black rounded-full font-bold hover:brightness-110 transition-all flex items-center justify-center gap-2 group text-sm md:text-base shadow-[0_0_20px_rgba(212,175,55,0.4)]"
           >
             Agendar Curadoria Gratuita
@@ -135,6 +137,16 @@ const Hero = () => {
 };
 
 export default function App() {
+  useEffect(() => {
+    const loader = document.getElementById('app-loader');
+    if (loader) {
+      loader.style.opacity = '0';
+      setTimeout(() => {
+        loader.remove();
+      }, 500); // Wait for transition to finish
+    }
+  }, []);
+
   return (
     <div className="min-h-screen font-sans selection:bg-white selection:text-black bg-[#06120F]">
       <Suspense fallback={null}>

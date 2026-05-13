@@ -1,6 +1,7 @@
 import { motion, AnimatePresence } from 'motion/react';
 import { ArrowRight, ChevronRight, ArrowLeft } from 'lucide-react';
 import { useState } from 'react';
+import { trackViewContent, trackInstagramClick } from '../lib/fbPixel';
 
 interface FeatureCardProps {
   title: string;
@@ -140,6 +141,7 @@ export const Collections = () => {
                   href="https://instagram.com/nexainteriores" 
                   target="_blank" 
                   rel="noopener noreferrer"
+                  onClick={() => trackInstagramClick()}
                   className="flex items-center gap-2 text-white/80 hover:text-white transition-colors group text-sm md:text-base"
                 >
                   Ver catálogo completo no Instagram
@@ -154,7 +156,10 @@ export const Collections = () => {
                     title={item.title} 
                     description={item.description} 
                     image={item.image} 
-                    onClick={() => setActiveCategory(item.id)}
+                    onClick={() => {
+                      trackViewContent(item.title, item.id);
+                      setActiveCategory(item.id);
+                    }}
                   />
                 ))}
               </div>
