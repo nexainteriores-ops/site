@@ -1,8 +1,11 @@
 import { motion } from 'motion/react';
 import { MapPin, Clock, Phone, ChevronRight } from 'lucide-react';
+import { useState } from 'react';
 import { trackLead, trackFindLocation } from '../lib/fbPixel';
 
 export const VisitSection = () => {
+  const [loadIframe, setLoadIframe] = useState(false);
+
   return (
     <section id="visita" className="py-20 md:py-24 px-6 relative overflow-hidden">
       <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
@@ -76,18 +79,22 @@ export const VisitSection = () => {
         <motion.div 
           initial={{ opacity: 0, scale: 0.9 }}
           whileInView={{ opacity: 1, scale: 1 }}
-          viewport={{ once: true }}
+          viewport={{ once: true, margin: "200px" }}
+          onViewportEnter={() => setLoadIframe(true)}
           className="relative aspect-square rounded-[3rem] overflow-hidden glass p-4"
         >
-          <div className="w-full h-full rounded-[2.5rem] overflow-hidden bg-white/5 relative">
-            <iframe 
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3719.141505342417!2d-47.80368492473815!3d-21.21531698048256!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94b9be938f97e69b%3A0x6d9f9c7e8f97e69b!2sAv.%20Norma%20Val%C3%A9rio%20Corr%C3%AAa%2C%20316%20-%20Jardim%20Bot%C3%A2nico%2C%20Ribeir%C3%A3o%20Preto%20-%20SP%2C%2014021-614!5e0!3m2!1spt-BR!2sbr!4v1712089451000!5m2!1spt-BR!2sbr" 
-              className="w-full h-full border-0 opacity-80 grayscale invert contrast-[1.2] brightness-[0.8] hover:grayscale-0 hover:invert-0 hover:contrast-100 hover:brightness-100 transition-all duration-700"
-              allowFullScreen 
-              loading="lazy" 
-              referrerPolicy="no-referrer-when-downgrade"
-              title="Localização Nexa Interiores"
-            ></iframe>
+          <div className="w-full h-full rounded-[2.5rem] overflow-hidden bg-white/5 relative flex items-center justify-center">
+            {!loadIframe && <div className="animate-pulse flex flex-col items-center gap-4 opacity-50"><MapPin size={48} /><span className="font-medium">Carregando Mapa...</span></div>}
+            {loadIframe && (
+              <iframe 
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3719.141505342417!2d-47.80368492473815!3d-21.21531698048256!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94b9be938f97e69b%3A0x6d9f9c7e8f97e69b!2sAv.%20Norma%20Val%C3%A9rio%20Corr%C3%AAa%2C%20316%20-%20Jardim%20Bot%C3%A2nico%2C%20Ribeir%C3%A3o%20Preto%20-%20SP%2C%2014021-614!5e0!3m2!1spt-BR!2sbr!4v1712089451000!5m2!1spt-BR!2sbr" 
+                className="w-full h-full border-0 opacity-80 grayscale invert contrast-[1.2] brightness-[0.8] hover:grayscale-0 hover:invert-0 hover:contrast-100 hover:brightness-100 transition-all duration-700 absolute inset-0"
+                allowFullScreen 
+                loading="lazy" 
+                referrerPolicy="no-referrer-when-downgrade"
+                title="Localização Nexa Interiores"
+              ></iframe>
+            )}
             <div className="absolute inset-0 pointer-events-none border-[12px] border-black/20 rounded-[2.5rem]" />
           </div>
         </motion.div>

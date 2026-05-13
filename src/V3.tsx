@@ -270,6 +270,8 @@ const Footer = () => {
 };
 
 export default function V3() {
+  const [renderRest, setRenderRest] = useState(false);
+
   useEffect(() => {
     const loader = document.getElementById('app-loader');
     if (loader) {
@@ -278,6 +280,10 @@ export default function V3() {
         loader.remove();
       }, 500); // Wait for transition to finish
     }
+    
+    // Delay rendering below-the-fold content
+    const timer = setTimeout(() => setRenderRest(true), 100);
+    return () => clearTimeout(timer);
   }, []);
 
   return (
@@ -285,9 +291,13 @@ export default function V3() {
       <Navbar />
       <main>
         <Hero />
-        <Collections />
-        <AboutSection />
-        <Footer />
+        {renderRest && (
+          <>
+            <Collections />
+            <AboutSection />
+            <Footer />
+          </>
+        )}
       </main>
     </div>
   );

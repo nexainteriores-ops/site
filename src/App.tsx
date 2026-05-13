@@ -137,6 +137,8 @@ const Hero = () => {
 };
 
 export default function App() {
+  const [renderRest, setRenderRest] = useState(false);
+
   useEffect(() => {
     const loader = document.getElementById('app-loader');
     if (loader) {
@@ -145,6 +147,10 @@ export default function App() {
         loader.remove();
       }, 500); // Wait for transition to finish
     }
+    
+    // Delay rendering below-the-fold content to prioritize Hero and reduce TBT
+    const timer = setTimeout(() => setRenderRest(true), 100);
+    return () => clearTimeout(timer);
   }, []);
 
   return (
@@ -155,16 +161,20 @@ export default function App() {
       <Navbar />
       <main>
         <Hero />
-        <Suspense fallback={<div className="h-screen bg-[#06120F]" />}>
-          <Collections />
-          <AboutSection />
-          <VIPSection />
-          <VisitSection />
-        </Suspense>
+        {renderRest && (
+          <Suspense fallback={<div className="h-screen bg-[#06120F]" />}>
+            <Collections />
+            <AboutSection />
+            <VIPSection />
+            <VisitSection />
+          </Suspense>
+        )}
       </main>
-      <Suspense fallback={null}>
-        <Footer />
-      </Suspense>
+      {renderRest && (
+        <Suspense fallback={null}>
+          <Footer />
+        </Suspense>
+      )}
       <Analytics />
     </div>
   );
