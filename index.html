@@ -27,7 +27,8 @@
     
     <!-- Optimize performance: Preconnect and Preload -->
     <!-- Optimize performance: Preload Critical Assets -->
-    <link rel="preload" as="image" href="/images/hero.webp" fetchpriority="high" />
+    <link rel="preload" as="image" href="/images/hero-mobile.webp" media="(max-width: 768px)" fetchpriority="high" />
+    <link rel="preload" as="image" href="/images/hero.webp" media="(min-width: 769px)" fetchpriority="high" />
     
     <!-- Fonts: Preconnect and Link (Non-blocking) -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -76,7 +77,10 @@
       </nav>
       <section class="initial-skeleton">
         <div class="skeleton-bg"></div>
-        <img src="/images/hero.webp" alt="" class="skeleton-image" fetchpriority="high">
+        <picture style="position: absolute; inset: 0; width: 100%; height: 100%;">
+          <source media="(max-width: 768px)" srcset="/images/hero-mobile.webp">
+          <img src="/images/hero.webp" alt="" class="skeleton-image" fetchpriority="high">
+        </picture>
         <div class="hero-content-skeleton">
           <h1 class="hero-h1-skeleton">Mobiliário exclusivo <br /> direto das feiras <br /> para a sua casa.</h1>
         </div>

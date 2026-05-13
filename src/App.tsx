@@ -75,16 +75,19 @@ const Hero = () => {
   return (
     <section className="relative h-screen flex items-center justify-center overflow-hidden bg-[#06120F]">
       <div className="absolute inset-0 z-0">
-        <img 
-          src="/images/hero.webp" 
-          alt="Loja de móveis em Ribeirão Preto - Nexa Interiores: Mobiliário exclusivo e design de interiores premium" 
-          className="w-full h-full object-cover opacity-60"
-          referrerPolicy="no-referrer"
-          fetchPriority="high"
-          width="1920"
-          height="1080"
-          decoding="async"
-        />
+        <picture className="absolute inset-0 w-full h-full">
+          <source media="(max-width: 768px)" srcSet="/images/hero-mobile.webp" />
+          <img 
+            src="/images/hero.webp" 
+            alt="Loja de móveis em Ribeirão Preto - Nexa Interiores: Mobiliário exclusivo e design de interiores premium" 
+            className="w-full h-full object-cover opacity-60"
+            referrerPolicy="no-referrer"
+            fetchPriority="high"
+            width="1920"
+            height="1080"
+            decoding="async"
+          />
+        </picture>
         <div className="absolute inset-0 bg-gradient-to-b from-[#06120F]/20 via-[#06120F]/40 to-[#06120F]" />
       </div>
 

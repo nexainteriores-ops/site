@@ -32,7 +32,7 @@ export const Footer = () => {
           </a>
         </div>
 
-        <div className="text-white/20 text-xs text-center md:text-right">
+        <div className="text-white/60 text-xs text-center md:text-right">
           © 2026 Nexa Interiores. Todos os direitos reservados.
         </div>
       </div>
