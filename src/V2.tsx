@@ -12,7 +12,8 @@ const Navbar = () => {
         className="absolute inset-0 -z-10"
         style={{ 
           backgroundImage: "url('/images/textura.webp')",
-          backgroundSize: "cover",
+          backgroundSize: "800px auto",
+          backgroundRepeat: "repeat",
           backgroundPosition: "center",
         }}
       />
@@ -27,8 +28,8 @@ const Navbar = () => {
             alt="Nexa Interiores" 
             className="h-full w-auto object-cover" 
             style={{
-              maskImage: 'radial-gradient(ellipse 80% 80% at 50% 50%, black 50%, transparent 100%)',
-              WebkitMaskImage: 'radial-gradient(ellipse 80% 80% at 50% 50%, black 50%, transparent 100%)'
+              maskImage: 'radial-gradient(ellipse 60% 60% at 50% 50%, black 20%, transparent 80%)',
+              WebkitMaskImage: 'radial-gradient(ellipse 60% 60% at 50% 50%, black 20%, transparent 80%)'
             }}
           />
         </motion.div>
@@ -65,7 +66,8 @@ const Navbar = () => {
             className="absolute inset-0 -z-10"
             style={{ 
               backgroundImage: "url('/images/textura.webp')",
-              backgroundSize: "cover",
+              backgroundSize: "800px auto",
+              backgroundRepeat: "repeat",
               backgroundPosition: "center",
             }}
           />
@@ -257,7 +259,8 @@ const Footer = () => {
         className="absolute inset-0 -z-10"
         style={{ 
           backgroundImage: "url('/images/textura.webp')",
-          backgroundSize: "cover",
+          backgroundSize: "800px auto",
+          backgroundRepeat: "repeat",
           backgroundPosition: "center",
         }}
       />
@@ -269,8 +272,8 @@ const Footer = () => {
               alt="Nexa Interiores" 
               className="h-full w-auto object-cover" 
               style={{
-                maskImage: 'radial-gradient(ellipse 80% 80% at 50% 50%, black 50%, transparent 100%)',
-                WebkitMaskImage: 'radial-gradient(ellipse 80% 80% at 50% 50%, black 50%, transparent 100%)'
+                maskImage: 'radial-gradient(ellipse 60% 60% at 50% 50%, black 20%, transparent 80%)',
+                WebkitMaskImage: 'radial-gradient(ellipse 60% 60% at 50% 50%, black 20%, transparent 80%)'
               }}
             />
           </div>
