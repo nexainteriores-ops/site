@@ -10,23 +10,25 @@ const Navbar = () => {
   const backgroundColor = useTransform(scrollY, [0, 100], ['rgba(6, 18, 15, 0)', 'rgba(6, 18, 15, 1)']);
 
   return (
-    <nav className="fixed top-0 left-0 right-0 z-50 border-b border-white/5 overflow-hidden shadow-2xl">
-      {/* Projected Texture Background */}
-      <div 
-        className="absolute inset-0 -z-10"
-        style={{ 
-          backgroundImage: "url('/images/navbar-bg.png')",
-          backgroundRepeat: "repeat-x",
-          backgroundSize: "auto 100%",
-        }}
-      />
+    <motion.nav 
+      style={{ backgroundColor }}
+      className="fixed top-0 left-0 right-0 z-50 backdrop-blur-md border-b border-white/5 overflow-hidden"
+    >
       <div className="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
         <motion.div 
           initial={{ opacity: 0, x: -20 }}
           animate={{ opacity: 1, x: 0 }}
-          className="flex items-center h-full"
+          className="flex items-center h-full py-2"
         >
-          <img src="/logo.png" alt="Nexa Interiores" className="h-20 w-auto object-cover" />
+          <img 
+            src="/logo.png" 
+            alt="Nexa Interiores" 
+            className="h-full w-auto object-cover" 
+            style={{
+              maskImage: 'linear-gradient(to right, transparent 0%, black 15%, black 85%, transparent 100%)',
+              WebkitMaskImage: 'linear-gradient(to right, transparent 0%, black 15%, black 85%, transparent 100%)'
+            }}
+          />
         </motion.div>
 
         <div className="hidden md:flex items-center gap-8 text-sm font-medium text-white/70">
@@ -57,12 +59,7 @@ const Navbar = () => {
         <motion.div 
           initial={{ opacity: 0, y: -20 }}
           animate={{ opacity: 1, y: 0 }}
-          className="md:hidden border-t border-white/10 p-6 flex flex-col gap-4 text-sm font-medium"
-          style={{ 
-            backgroundImage: "url('/images/navbar-bg.png')",
-            backgroundRepeat: "repeat",
-            backgroundSize: "auto",
-          }}
+          className="md:hidden glass border-t border-white/10 p-6 flex flex-col gap-4 text-sm font-medium"
         >
           <a href="#colecoes" className="hover:text-white transition-colors" onClick={() => setIsOpen(false)}>Coleções</a>
           <a href="#sobre" className="hover:text-white transition-colors" onClick={() => setIsOpen(false)}>A Marca</a>
@@ -70,7 +67,7 @@ const Navbar = () => {
           <a href="#visita" className="hover:text-white transition-colors" onClick={() => setIsOpen(false)}>Visite-nos</a>
         </motion.div>
       )}
-    </nav>
+    </motion.nav>
   );
 };
 
