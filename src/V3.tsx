@@ -26,8 +26,8 @@ const Navbar = () => {
             alt="Nexa Interiores" 
             className="h-full w-auto object-cover" 
             style={{
-              maskImage: 'linear-gradient(to right, transparent 0%, black 15%, black 85%, transparent 100%)',
-              WebkitMaskImage: 'linear-gradient(to right, transparent 0%, black 15%, black 85%, transparent 100%)'
+              maskImage: 'radial-gradient(ellipse 80% 80% at 50% 50%, black 50%, transparent 100%)',
+              WebkitMaskImage: 'radial-gradient(ellipse 80% 80% at 50% 50%, black 50%, transparent 100%)'
             }}
           />
         </motion.div>
@@ -251,7 +251,7 @@ const AboutSection = () => {
 
 const Footer = () => {
   return (
-    <footer className="py-20 px-6 border-t border-white/5 relative overflow-hidden">
+    <footer className="py-20 px-6 border-t border-white/5 relative z-0 overflow-hidden">
       <div 
         className="absolute inset-0 -z-10"
         style={{ 
@@ -268,8 +268,8 @@ const Footer = () => {
               alt="Nexa Interiores" 
               className="h-full w-auto object-cover" 
               style={{
-                maskImage: 'linear-gradient(to right, transparent 0%, black 15%, black 85%, transparent 100%)',
-                WebkitMaskImage: 'linear-gradient(to right, transparent 0%, black 15%, black 85%, transparent 100%)'
+                maskImage: 'radial-gradient(ellipse 80% 80% at 50% 50%, black 50%, transparent 100%)',
+                WebkitMaskImage: 'radial-gradient(ellipse 80% 80% at 50% 50%, black 50%, transparent 100%)'
               }}
             />
           </div>
