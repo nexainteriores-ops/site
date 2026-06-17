@@ -13,8 +13,16 @@ export const Footer = () => {
       />
       <div className="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-12">
         <div className="text-center md:text-left">
-          <div className="mb-4 flex items-center justify-center md:justify-start h-20">
-            <img src="/logo.png" alt="Nexa Interiores" className="h-20 w-auto object-cover" />
+          <div className="mb-4 flex items-center justify-center md:justify-start h-20 py-2">
+            <img 
+              src="/logo.png" 
+              alt="Nexa Interiores" 
+              className="h-full w-auto object-cover" 
+              style={{
+                maskImage: 'linear-gradient(to right, transparent 0%, black 15%, black 85%, transparent 100%)',
+                WebkitMaskImage: 'linear-gradient(to right, transparent 0%, black 15%, black 85%, transparent 100%)'
+              }}
+            />
           </div>
           <p className="text-white/60 text-sm max-w-xs">
             A melhor loja de móveis de alto padrão em Ribeirão Preto. Design de interiores premium, móveis de luxo e mobiliário exclusivo para sua casa.

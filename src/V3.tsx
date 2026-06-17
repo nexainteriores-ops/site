@@ -251,11 +251,27 @@ const AboutSection = () => {
 
 const Footer = () => {
   return (
-    <footer className="py-20 px-6 border-t border-white/5 bg-brand-bg-deep">
+    <footer className="py-20 px-6 border-t border-white/5 relative overflow-hidden">
+      <div 
+        className="absolute inset-0 -z-10"
+        style={{ 
+          backgroundImage: "url('/images/textura.webp')",
+          backgroundSize: "cover",
+          backgroundPosition: "center",
+        }}
+      />
       <div className="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-start gap-16">
         <div>
-          <div className="flex items-center mb-6 h-20">
-            <img src="/logo.png" alt="Nexa Interiores" className="h-20 w-auto object-cover" />
+          <div className="flex items-center mb-6 h-20 py-2">
+            <img 
+              src="/logo.png" 
+              alt="Nexa Interiores" 
+              className="h-full w-auto object-cover" 
+              style={{
+                maskImage: 'linear-gradient(to right, transparent 0%, black 15%, black 85%, transparent 100%)',
+                WebkitMaskImage: 'linear-gradient(to right, transparent 0%, black 15%, black 85%, transparent 100%)'
+              }}
+            />
           </div>
           <p className="text-white/60 text-sm max-w-xs leading-relaxed">
             Mobiliário de alto padrão e curadoria gratuita em Ribeirão Preto. Elevando seu conceito de morar bem.
