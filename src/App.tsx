@@ -14,14 +14,16 @@ const SEOData = lazy(() => import('./components/SEOData').then(m => ({ default: 
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
-  const { scrollY } = useScroll();
-  const backgroundColor = useTransform(scrollY, [0, 100], ['rgba(6, 18, 15, 0)', 'rgba(6, 18, 15, 1)']);
-
   return (
-    <motion.nav 
-      style={{ backgroundColor }}
-      className="fixed top-0 left-0 right-0 z-50 backdrop-blur-md border-b border-white/5 overflow-hidden"
-    >
+    <nav className="fixed top-0 left-0 right-0 z-50 border-b border-white/5 overflow-hidden shadow-2xl">
+      <div 
+        className="absolute inset-0 -z-10"
+        style={{ 
+          backgroundImage: "url('/images/textura.webp')",
+          backgroundSize: "cover",
+          backgroundPosition: "center",
+        }}
+      />
       <div className="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
         <motion.div 
           initial={{ opacity: 0, x: -20 }}
@@ -64,18 +66,24 @@ const Navbar = () => {
 
       {/* Mobile Menu */}
       {isOpen && (
-        <motion.div 
-          initial={{ opacity: 0, y: -20 }}
-          animate={{ opacity: 1, y: 0 }}
-          className="md:hidden glass border-t border-white/10 p-6 flex flex-col gap-4 text-sm font-medium"
+        <div 
+          className="md:hidden border-t border-white/10 p-6 flex flex-col gap-4 text-sm font-medium relative"
         >
+          <div 
+            className="absolute inset-0 -z-10"
+            style={{ 
+              backgroundImage: "url('/images/textura.webp')",
+              backgroundSize: "cover",
+              backgroundPosition: "center",
+            }}
+          />
           <a href="#colecoes" className="hover:text-white transition-colors" onClick={() => setIsOpen(false)}>Coleções</a>
           <a href="#sobre" className="hover:text-white transition-colors" onClick={() => setIsOpen(false)}>A Marca</a>
           <a href="#vip" className="text-[#D4AF37] hover:text-[#F9E498] transition-colors" onClick={() => setIsOpen(false)}>Grupo VIP</a>
           <a href="#visita" className="hover:text-white transition-colors" onClick={() => setIsOpen(false)}>Visite-nos</a>
-        </motion.div>
+        </div>
       )}
-    </motion.nav>
+    </nav>
   );
 };
 

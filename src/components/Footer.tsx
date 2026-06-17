@@ -2,7 +2,15 @@ import { Instagram } from 'lucide-react';
 
 export const Footer = () => {
   return (
-    <footer className="py-12 md:py-16 px-6 border-t border-white/5 bg-[#06120F]">
+    <footer className="py-12 md:py-16 px-6 border-t border-white/5 relative overflow-hidden">
+      <div 
+        className="absolute inset-0 -z-10"
+        style={{ 
+          backgroundImage: "url('/images/textura.webp')",
+          backgroundSize: "cover",
+          backgroundPosition: "center",
+        }}
+      />
       <div className="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-12">
         <div className="text-center md:text-left">
           <div className="mb-4 flex items-center justify-center md:justify-start h-20">
