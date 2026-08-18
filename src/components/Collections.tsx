@@ -135,28 +135,28 @@ export const Collections = () => {
       id: "cadeiras",
       title: "Cadeiras",
       description: "Cadeiras autorais e ergonômicas que combinam conforto térmico, estética contemporânea e acabamento impecável.",
-      image: "https://images.unsplash.com/photo-1580481072645-022f9a6d83d0?auto=format&fit=crop&q=80&w=800",
+      image: "/images/cadeiras/c1.webp",
       items: [
-        { name: "Cadeira Curadoria Design", image: "https://images.unsplash.com/photo-1580481072645-022f9a6d83d0?auto=format&fit=crop&q=80&w=600" },
-        { name: "Cadeira Estofada Premium", image: "https://images.unsplash.com/photo-1503602642458-232111445657?auto=format&fit=crop&q=80&w=600" },
-        { name: "Cadeira de Jantar Wood", image: "https://images.unsplash.com/photo-1567538096630-e0c55bd6374c?auto=format&fit=crop&q=80&w=600" },
-        { name: "Cadeira Contemporânea", image: "https://images.unsplash.com/photo-1586023492125-27b2c045efd7?auto=format&fit=crop&q=80&w=600" },
-        { name: "Cadeira Ergonômica Luxe", image: "https://images.unsplash.com/photo-1567538096630-e0c55bd6374c?auto=format&fit=crop&q=80&w=600" },
-        { name: "Cadeira Exclusiva Jantar", image: "https://images.unsplash.com/photo-1580481072645-022f9a6d83d0?auto=format&fit=crop&q=80&w=600" }
+        { name: "Cadeira Curadoria Design", image: "/images/cadeiras/c1.webp" },
+        { name: "Cadeira Estofada Premium", image: "/images/cadeiras/c2.webp" },
+        { name: "Cadeira de Jantar Wood", image: "/images/cadeiras/c3.webp" },
+        { name: "Cadeira Contemporânea", image: "/images/cadeiras/c4.webp" },
+        { name: "Cadeira Ergonômica Luxe", image: "/images/cadeiras/c5.webp" },
+        { name: "Cadeira Exclusiva Jantar", image: "/images/cadeiras/c6.webp" }
       ]
     },
     {
       id: "decoracao",
       title: "Decoração",
       description: "Objetos de arte, vasos e acessórios sofisticados que dão o toque final de personalidade aos seus espaços.",
-      image: "https://images.unsplash.com/photo-1513519245088-0e12902e5a38?auto=format&fit=crop&q=80&w=800",
+      image: "/images/decoracao/d1.webp",
       items: [
-        { name: "Vaso Escultural", image: "https://images.unsplash.com/photo-1513519245088-0e12902e5a38?auto=format&fit=crop&q=80&w=600" },
-        { name: "Centro de Mesa Design", image: "https://images.unsplash.com/photo-1578500494198-246f612d3b3d?auto=format&fit=crop&q=80&w=600" },
-        { name: "Escultura Decorativa", image: "https://images.unsplash.com/photo-1616046229478-9901c5536a45?auto=format&fit=crop&q=80&w=600" },
-        { name: "Objeto de Arte Contemporâneo", image: "https://images.unsplash.com/photo-1584589167171-541ce45f1eea?auto=format&fit=crop&q=80&w=600" },
-        { name: "Vaso Cerâmica Minimalista", image: "https://images.unsplash.com/photo-1513519245088-0e12902e5a38?auto=format&fit=crop&q=80&w=600" },
-        { name: "Adorno de Mesa Nobre", image: "https://images.unsplash.com/photo-1578500494198-246f612d3b3d?auto=format&fit=crop&q=80&w=600" }
+        { name: "Vaso Escultural", image: "/images/decoracao/d1.webp" },
+        { name: "Centro de Mesa Design", image: "/images/decoracao/d2.webp" },
+        { name: "Escultura Decorativa", image: "/images/decoracao/d3.webp" },
+        { name: "Objeto de Arte Contemporâneo", image: "/images/decoracao/d4.webp" },
+        { name: "Vaso Cerâmica Minimalista", image: "/images/decoracao/d5.webp" },
+        { name: "Adorno de Mesa Nobre", image: "/images/decoracao/d6.webp" }
       ]
     }
   ];
