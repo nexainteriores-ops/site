@@ -81,10 +81,12 @@ export const Collections = () => {
       description: "Sofás de luxo e design que definem o conceito de conforto e sofisticação para o seu ambiente.",
       image: "/images/sofas/s1.webp",
       items: [
-        { name: "Sofá Design", image: "/images/sofas/s1.webp" },
+        { name: "Sofá Design Exclusivo", image: "/images/sofas/s1.webp" },
         { name: "Sofá Contemporâneo", image: "/images/sofas/s2.webp" },
-        { name: "Sofá Clássico", image: "/images/sofas/s3.webp" },
-        { name: "Sofá Minimalista", image: "/images/sofas/s4.webp" }
+        { name: "Sofá Clássico Premium", image: "/images/sofas/s3.webp" },
+        { name: "Sofá Minimalista Modular", image: "/images/sofas/s4.webp" },
+        { name: "Sofá Velvet Comfort", image: "/images/sofas/s5.webp" },
+        { name: "Sofá Curadoria Império", image: "/images/sofas/s6.webp" }
       ]
     },
     {
@@ -93,10 +95,12 @@ export const Collections = () => {
       description: "Poltronas de design exclusivo, unindo ergonomia, arte e alto padrão para sua sala ou dormitório.",
       image: "/images/poltronas/p1.webp",
       items: [
-        { name: "Poltrona Exclusiva", image: "/images/poltronas/p1.webp" },
-        { name: "Poltrona Classic", image: "/images/poltronas/p2.webp" },
-        { name: "Poltrona Velvet", image: "/images/poltronas/p3.webp" },
-        { name: "Poltrona Lounge", image: "/images/poltronas/p4.webp" }
+        { name: "Poltrona Exclusiva Giratória", image: "/images/poltronas/p1.webp" },
+        { name: "Poltrona Classic Ergonomic", image: "/images/poltronas/p2.webp" },
+        { name: "Poltrona Velvet Touch", image: "/images/poltronas/p3.webp" },
+        { name: "Poltrona Lounge Premium", image: "/images/poltronas/p4.webp" },
+        { name: "Poltrona Art Nouveau", image: "/images/poltronas/p5.webp" },
+        { name: "Poltrona Curadoria Nexa", image: "/images/poltronas/p7.webp" }
       ]
     },
     {
@@ -105,27 +109,26 @@ export const Collections = () => {
       description: "Mesas de jantar de alto padrão e cadeiras exclusivas para momentos inesquecíveis em sua residência.",
       image: "/images/salas-de-jantar/m1.webp",
       items: [
-        { name: "Mesa de Jantar de Alto Padrão", image: "/images/salas-de-jantar/m1.webp" },
+        { name: "Mesa de Jantar Alto Padrão", image: "/images/salas-de-jantar/m1.webp" },
         { name: "Sala de Jantar Elegance", image: "/images/salas-de-jantar/m2.webp" },
         { name: "Conjunto Jantar Moderno", image: "/images/salas-de-jantar/m3.webp" },
         { name: "Mesa de Jantar Exclusiva", image: "/images/salas-de-jantar/m4.webp" },
         { name: "Mesa de Jantar Clássica", image: "/images/salas-de-jantar/m5.webp" },
-        { name: "Sala de Jantar Completa", image: "/images/salas-de-jantar/m6.webp" },
-        { name: "Mesa de Jantar Imperial", image: "/images/salas-de-jantar/m7.webp" },
-        { name: "Conjunto Jantar Premium", image: "/images/salas-de-jantar/m8.webp" },
-        { name: "Mesa de Jantar Minimalista", image: "/images/salas-de-jantar/m9.webp" }
+        { name: "Sala de Jantar Completa", image: "/images/salas-de-jantar/m6.webp" }
       ]
     },
     {
       id: "mesas",
       title: "Mesas",
       description: "Mesas de centro, lateral e apoio com design autoral, materiais nobres e acabamentos refinados.",
-      image: "https://images.unsplash.com/photo-1530018607912-eff2daa1bac4?auto=format&fit=crop&q=80&w=800",
+      image: "/images/mesas/m1.webp",
       items: [
-        { name: "Mesa de Centro Escultural", image: "https://images.unsplash.com/photo-1530018607912-eff2daa1bac4?auto=format&fit=crop&q=80&w=600" },
-        { name: "Mesa Lateral Orgânica", image: "https://images.unsplash.com/photo-1533779283484-8ad4940aa3a8?auto=format&fit=crop&q=80&w=600" },
-        { name: "Mesa de Apoio Mármore", image: "https://images.unsplash.com/photo-1615066390971-03e4e1c36ddf?auto=format&fit=crop&q=80&w=600" },
-        { name: "Mesa de Cabeceira Premium", image: "https://images.unsplash.com/photo-1540518614846-7ede433c5172?auto=format&fit=crop&q=80&w=600" }
+        { name: "Mesa de Centro Escultural", image: "/images/mesas/m1.webp" },
+        { name: "Mesa Lateral Orgânica", image: "/images/mesas/m2.webp" },
+        { name: "Mesa de Apoio Mármore", image: "/images/mesas/m3.webp" },
+        { name: "Mesa de Cabeceira Premium", image: "/images/mesas/m4.webp" },
+        { name: "Mesa de Centro Minimalista", image: "/images/mesas/m5.webp" },
+        { name: "Mesa de Centro Exclusiva", image: "/images/mesas/m6.webp" }
       ]
     },
     {
@@ -137,7 +140,9 @@ export const Collections = () => {
         { name: "Cadeira Curadoria Design", image: "https://images.unsplash.com/photo-1580481072645-022f9a6d83d0?auto=format&fit=crop&q=80&w=600" },
         { name: "Cadeira Estofada Premium", image: "https://images.unsplash.com/photo-1503602642458-232111445657?auto=format&fit=crop&q=80&w=600" },
         { name: "Cadeira de Jantar Wood", image: "https://images.unsplash.com/photo-1567538096630-e0c55bd6374c?auto=format&fit=crop&q=80&w=600" },
-        { name: "Cadeira Contemporânea", image: "https://images.unsplash.com/photo-1586023492125-27b2c045efd7?auto=format&fit=crop&q=80&w=600" }
+        { name: "Cadeira Contemporânea", image: "https://images.unsplash.com/photo-1586023492125-27b2c045efd7?auto=format&fit=crop&q=80&w=600" },
+        { name: "Cadeira Ergonômica Luxe", image: "https://images.unsplash.com/photo-1567538096630-e0c55bd6374c?auto=format&fit=crop&q=80&w=600" },
+        { name: "Cadeira Exclusiva Jantar", image: "https://images.unsplash.com/photo-1580481072645-022f9a6d83d0?auto=format&fit=crop&q=80&w=600" }
       ]
     },
     {
@@ -149,7 +154,9 @@ export const Collections = () => {
         { name: "Vaso Escultural", image: "https://images.unsplash.com/photo-1513519245088-0e12902e5a38?auto=format&fit=crop&q=80&w=600" },
         { name: "Centro de Mesa Design", image: "https://images.unsplash.com/photo-1578500494198-246f612d3b3d?auto=format&fit=crop&q=80&w=600" },
         { name: "Escultura Decorativa", image: "https://images.unsplash.com/photo-1616046229478-9901c5536a45?auto=format&fit=crop&q=80&w=600" },
-        { name: "Objeto de Arte Contemporâneo", image: "https://images.unsplash.com/photo-1584589167171-541ce45f1eea?auto=format&fit=crop&q=80&w=600" }
+        { name: "Objeto de Arte Contemporâneo", image: "https://images.unsplash.com/photo-1584589167171-541ce45f1eea?auto=format&fit=crop&q=80&w=600" },
+        { name: "Vaso Cerâmica Minimalista", image: "https://images.unsplash.com/photo-1513519245088-0e12902e5a38?auto=format&fit=crop&q=80&w=600" },
+        { name: "Adorno de Mesa Nobre", image: "https://images.unsplash.com/photo-1578500494198-246f612d3b3d?auto=format&fit=crop&q=80&w=600" }
       ]
     }
   ];
