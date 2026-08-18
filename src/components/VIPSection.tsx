@@ -36,7 +36,7 @@ export const VIPSection = () => {
             </p>
 
             <motion.a 
-              href="https://chat.whatsapp.com/IbkkmjexeIaBWmV5IhjFdz?mode=gi_t"
+              href="https://chat.whatsapp.com/EGT9JtbiFU94ZStAdiQoNF?s=cl&p=i&mlu=4&amv=0"
               target="_blank"
               rel="noopener noreferrer"
               whileHover={{ scale: 1.05 }}
