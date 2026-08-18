@@ -1,0 +1,7 @@
+{
+  "name": "Room Reimagine",
+  "description": "Take a photo of your room and visualize new furniture from our catalog in your space.",
+  "requestFramePermissions": [
+    "camera"
+  ]
+}

@@ -6,7 +6,7 @@ import {defineConfig, loadEnv} from 'vite';
 const inlineCssPlugin = () => {
   return {
     name: 'inline-css',
-    enforce: 'post',
+    enforce: 'post' as const,
     generateBundle(options, bundle) {
       const cssFiles = Object.keys(bundle).filter(fileName => fileName.endsWith('.css'));
       const htmlFile = Object.keys(bundle).find(fileName => fileName.endsWith('.html'));

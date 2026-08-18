@@ -60,7 +60,7 @@ const CollectionItem = ({ item, index }: CollectionItemProps) => {
         alt={item.name} 
         loading="lazy"
         onError={() => setItemImg("https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?auto=format&fit=crop&q=80&w=400")}
-        className={`absolute inset-0 w-full h-full object-cover opacity-70 group-hover:scale-110 transition-transform duration-700 ${item.name === "Sofá Elegance" ? "scale-y-[-1] group-hover:scale-y-[-1.1]" : ""}`}
+        className="absolute inset-0 w-full h-full object-cover opacity-70 group-hover:scale-110 transition-transform duration-700"
         referrerPolicy="no-referrer"
       />
       <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/20 to-transparent opacity-80" />
@@ -84,9 +84,7 @@ export const Collections = () => {
         { name: "Sofá Design", image: "/images/sofas/s1.webp" },
         { name: "Sofá Contemporâneo", image: "/images/sofas/s2.webp" },
         { name: "Sofá Clássico", image: "/images/sofas/s3.webp" },
-        { name: "Sofá Minimalista", image: "/images/sofas/s4.webp" },
-        { name: "Sofá Modular", image: "/images/sofas/s5.webp" },
-        { name: "Sofá Elegance", image: "/images/sofas/s6_v3.webp" }
+        { name: "Sofá Minimalista", image: "/images/sofas/s4.webp" }
       ]
     },
     {
@@ -95,26 +93,27 @@ export const Collections = () => {
       description: "Poltronas de design exclusivo, unindo ergonomia, arte e alto padrão para sua sala ou dormitório.",
       image: "/images/poltronas/p1.webp",
       items: [
-        { name: "Poltrona Exclusiva", image: "/images/poltronas/74594662-DCB1-42B4-BB1D-B1A85BD3FDC0.webp" },
-        { name: "Poltrona Classic", image: "/images/poltronas/p1.webp" },
-        { name: "Poltrona Velvet", image: "/images/poltronas/p2.webp" },
-        { name: "Poltrona Lounge", image: "/images/poltronas/p4.webp" },
-        { name: "Poltrona Modern", image: "/images/poltronas/p5.webp" },
-        { name: "Poltrona Art", image: "/images/poltronas/p7.webp" }
+        { name: "Poltrona Exclusiva", image: "/images/poltronas/p1.webp" },
+        { name: "Poltrona Classic", image: "/images/poltronas/p2.webp" },
+        { name: "Poltrona Velvet", image: "/images/poltronas/p3.webp" },
+        { name: "Poltrona Lounge", image: "/images/poltronas/p4.webp" }
       ]
     },
     {
       id: "dining",
       title: "Salas de Jantar",
       description: "Mesas de jantar de alto padrão e cadeiras exclusivas para momentos inesquecíveis em sua residência.",
-      image: "/images/salas-de-jantar/m2.webp",
+      image: "/images/salas-de-jantar/m1.webp",
       items: [
-        { name: "Mesa de Jantar de Alto Padrão", image: "/images/salas-de-jantar/D976339B-E0C1-4249-A47F-E6C2C9FB7EF7.webp" },
-        { name: "Sala de Jantar Elegance", image: "/images/salas-de-jantar/IMG_6215.webp" },
-        { name: "Conjunto Jantar Moderno", image: "/images/salas-de-jantar/m1].webp" },
-        { name: "Mesa de Jantar Exclusiva", image: "/images/salas-de-jantar/m2.webp" },
-        { name: "Mesa de Jantar Clássica", image: "/images/salas-de-jantar/m3.webp" },
-        { name: "Sala de Jantar Completa", image: "/images/salas-de-jantar/m4.webp" }
+        { name: "Mesa de Jantar de Alto Padrão", image: "/images/salas-de-jantar/m1.webp" },
+        { name: "Sala de Jantar Elegance", image: "/images/salas-de-jantar/m2.webp" },
+        { name: "Conjunto Jantar Moderno", image: "/images/salas-de-jantar/m3.webp" },
+        { name: "Mesa de Jantar Exclusiva", image: "/images/salas-de-jantar/m4.webp" },
+        { name: "Mesa de Jantar Clássica", image: "/images/salas-de-jantar/m5.webp" },
+        { name: "Sala de Jantar Completa", image: "/images/salas-de-jantar/m6.webp" },
+        { name: "Mesa de Jantar Imperial", image: "/images/salas-de-jantar/m7.webp" },
+        { name: "Conjunto Jantar Premium", image: "/images/salas-de-jantar/m8.webp" },
+        { name: "Mesa de Jantar Minimalista", image: "/images/salas-de-jantar/m9.webp" }
       ]
     }
   ];

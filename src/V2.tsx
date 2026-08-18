@@ -180,7 +180,7 @@ const Collections = () => {
       image: "/images/sofas/s1.webp",
       items: [
         { name: "Sofá Design", image: "/images/sofas/s1.webp" },
-        { name: "Sofá Elegance", image: "/images/sofas/s6.webp" }
+        { name: "Sofá Elegance", image: "/images/sofas/s2.webp" }
       ]
     },
     {
@@ -196,9 +196,9 @@ const Collections = () => {
       id: "dining",
       title: "Salas de Jantar",
       description: "O cenário perfeito para momentos inesquecíveis.",
-      image: "/images/salas-de-jantar/m2.webp",
+      image: "/images/salas-de-jantar/m1.webp",
       items: [
-        { name: "Mesa de Jantar", image: "/images/salas-de-jantar/m2.webp" }
+        { name: "Mesa de Jantar", image: "/images/salas-de-jantar/m1.webp" }
       ]
     }
   ];
