@@ -14,7 +14,6 @@ createRoot(document.getElementById('root')!).render(
         <Route path="/" element={<App />} />
         <Route path="/v2" element={<V2 />} />
         <Route path="/v3" element={<V3 />} />
-        <Route path="/reimagine" element={<Reimagine />} />
       </Routes>
     </BrowserRouter>
   </StrictMode>,
