@@ -115,6 +115,42 @@ export const Collections = () => {
         { name: "Conjunto Jantar Premium", image: "/images/salas-de-jantar/m8.webp" },
         { name: "Mesa de Jantar Minimalista", image: "/images/salas-de-jantar/m9.webp" }
       ]
+    },
+    {
+      id: "mesas",
+      title: "Mesas",
+      description: "Mesas de centro, lateral e apoio com design autoral, materiais nobres e acabamentos refinados.",
+      image: "https://images.unsplash.com/photo-1530018607912-eff2daa1bac4?auto=format&fit=crop&q=80&w=800",
+      items: [
+        { name: "Mesa de Centro Escultural", image: "https://images.unsplash.com/photo-1530018607912-eff2daa1bac4?auto=format&fit=crop&q=80&w=600" },
+        { name: "Mesa Lateral Orgânica", image: "https://images.unsplash.com/photo-1533779283484-8ad4940aa3a8?auto=format&fit=crop&q=80&w=600" },
+        { name: "Mesa de Apoio Mármore", image: "https://images.unsplash.com/photo-1615066390971-03e4e1c36ddf?auto=format&fit=crop&q=80&w=600" },
+        { name: "Mesa de Cabeceira Premium", image: "https://images.unsplash.com/photo-1540518614846-7ede433c5172?auto=format&fit=crop&q=80&w=600" }
+      ]
+    },
+    {
+      id: "cadeiras",
+      title: "Cadeiras",
+      description: "Cadeiras autorais e ergonômicas que combinam conforto térmico, estética contemporânea e acabamento impecável.",
+      image: "https://images.unsplash.com/photo-1580481072645-022f9a6d83d0?auto=format&fit=crop&q=80&w=800",
+      items: [
+        { name: "Cadeira Curadoria Design", image: "https://images.unsplash.com/photo-1580481072645-022f9a6d83d0?auto=format&fit=crop&q=80&w=600" },
+        { name: "Cadeira Estofada Premium", image: "https://images.unsplash.com/photo-1503602642458-232111445657?auto=format&fit=crop&q=80&w=600" },
+        { name: "Cadeira de Jantar Wood", image: "https://images.unsplash.com/photo-1567538096630-e0c55bd6374c?auto=format&fit=crop&q=80&w=600" },
+        { name: "Cadeira Contemporânea", image: "https://images.unsplash.com/photo-1586023492125-27b2c045efd7?auto=format&fit=crop&q=80&w=600" }
+      ]
+    },
+    {
+      id: "decoracao",
+      title: "Decoração",
+      description: "Objetos de arte, vasos e acessórios sofisticados que dão o toque final de personalidade aos seus espaços.",
+      image: "https://images.unsplash.com/photo-1513519245088-0e12902e5a38?auto=format&fit=crop&q=80&w=800",
+      items: [
+        { name: "Vaso Escultural", image: "https://images.unsplash.com/photo-1513519245088-0e12902e5a38?auto=format&fit=crop&q=80&w=600" },
+        { name: "Centro de Mesa Design", image: "https://images.unsplash.com/photo-1578500494198-246f612d3b3d?auto=format&fit=crop&q=80&w=600" },
+        { name: "Escultura Decorativa", image: "https://images.unsplash.com/photo-1616046229478-9901c5536a45?auto=format&fit=crop&q=80&w=600" },
+        { name: "Objeto de Arte Contemporâneo", image: "https://images.unsplash.com/photo-1584589167171-541ce45f1eea?auto=format&fit=crop&q=80&w=600" }
+      ]
     }
   ];
 
@@ -134,7 +170,7 @@ export const Collections = () => {
               <div className="flex flex-col md:flex-row md:items-end justify-between mb-12 md:mb-16 gap-8">
                 <div className="max-w-3xl">
                   <h2 className="text-3xl md:text-5xl font-display font-bold mb-4 md:mb-6 tracking-tight text-white">Catálogo Exclusivo. <br /> Curadoria Gratuita.</h2>
-                  <p className="text-white/80 text-base md:text-lg">Nossa equipe de especialistas oferece curadoria de interiores gratuita. Escolha os melhores sofás de luxo, poltronas e mesas de jantar, selecionados a dedo diretamente das maiores feiras de design para a sua casa em Ribeirão Preto.</p>
+                  <p className="text-white/80 text-base md:text-lg">Nossa equipe de especialistas oferece curadoria de interiores gratuita. Escolha os melhores sofás de luxo, poltronas, salas de jantar, mesas, cadeiras e itens de decoração, selecionados a dedo diretamente das maiores feiras de design para a sua casa em Ribeirão Preto.</p>
                 </div>
                 <a 
                   href="https://instagram.com/nexainteriores" 
@@ -148,7 +184,7 @@ export const Collections = () => {
                 </a>
               </div>
 
-              <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 md:gap-8">
+              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
                 {collections.map((item) => (
                   <FeatureCard 
                     key={item.id} 

@@ -199,6 +199,33 @@ const Collections = () => {
       items: [
         { name: "Mesa de Jantar", image: "/images/salas-de-jantar/m1.webp" }
       ]
+    },
+    {
+      id: "mesas",
+      title: "Mesas",
+      description: "Mesas de centro, lateral e apoio com acabamento impecável.",
+      image: "https://images.unsplash.com/photo-1530018607912-eff2daa1bac4?auto=format&fit=crop&q=80&w=800",
+      items: [
+        { name: "Mesa Escultural", image: "https://images.unsplash.com/photo-1530018607912-eff2daa1bac4?auto=format&fit=crop&q=80&w=600" }
+      ]
+    },
+    {
+      id: "cadeiras",
+      title: "Cadeiras",
+      description: "Cadeiras autorais que combinam ergonomia e estética refinada.",
+      image: "https://images.unsplash.com/photo-1580481072645-022f9a6d83d0?auto=format&fit=crop&q=80&w=800",
+      items: [
+        { name: "Cadeira Design", image: "https://images.unsplash.com/photo-1580481072645-022f9a6d83d0?auto=format&fit=crop&q=80&w=600" }
+      ]
+    },
+    {
+      id: "decoracao",
+      title: "Decoração",
+      description: "Acessórios sofisticados que dão o toque final ao seu ambiente.",
+      image: "https://images.unsplash.com/photo-1513519245088-0e12902e5a38?auto=format&fit=crop&q=80&w=800",
+      items: [
+        { name: "Objeto Decorativo", image: "https://images.unsplash.com/photo-1513519245088-0e12902e5a38?auto=format&fit=crop&q=80&w=600" }
+      ]
     }
   ];
 
@@ -211,7 +238,7 @@ const Collections = () => {
           <p className="text-white/70 text-lg leading-relaxed">Selecionamos as melhores peças diretamente das maiores feiras de design para harmonizar com seu projeto de alto padrão em Ribeirão Preto.</p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
           {collections.map((item) => (
             <FeatureCard 
               key={item.id} 
