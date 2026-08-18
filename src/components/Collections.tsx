@@ -81,12 +81,12 @@ export const Collections = () => {
       description: "Sofás de luxo e design que definem o conceito de conforto e sofisticação para o seu ambiente.",
       image: "/images/sofas/s1.webp",
       items: [
-        { name: "Sofá Design Exclusivo", image: "/images/sofas/s1.webp" },
-        { name: "Sofá Contemporâneo", image: "/images/sofas/s2.webp" },
-        { name: "Sofá Clássico Premium", image: "/images/sofas/s3.webp" },
-        { name: "Sofá Minimalista Modular", image: "/images/sofas/s4.webp" },
-        { name: "Sofá Velvet Comfort", image: "/images/sofas/s5.webp" },
-        { name: "Sofá Curadoria Império", image: "/images/sofas/s6.webp" }
+        { name: "s1.webp", image: "/images/sofas/s1.webp" },
+        { name: "s2.webp", image: "/images/sofas/s2.webp" },
+        { name: "s3.webp", image: "/images/sofas/s3.webp" },
+        { name: "s4.webp", image: "/images/sofas/s4.webp" },
+        { name: "s5.webp", image: "/images/sofas/s5.webp" },
+        { name: "s6.webp", image: "/images/sofas/s6.webp" }
       ]
     },
     {
@@ -95,12 +95,12 @@ export const Collections = () => {
       description: "Poltronas de design exclusivo, unindo ergonomia, arte e alto padrão para sua sala ou dormitório.",
       image: "/images/poltronas/p1.webp",
       items: [
-        { name: "Poltrona Exclusiva Giratória", image: "/images/poltronas/p1.webp" },
-        { name: "Poltrona Classic Ergonomic", image: "/images/poltronas/p2.webp" },
-        { name: "Poltrona Velvet Touch", image: "/images/poltronas/p3.webp" },
-        { name: "Poltrona Lounge Premium", image: "/images/poltronas/p4.webp" },
-        { name: "Poltrona Art Nouveau", image: "/images/poltronas/p5.webp" },
-        { name: "Poltrona Curadoria Nexa", image: "/images/poltronas/p7.webp" }
+        { name: "p1.webp", image: "/images/poltronas/p1.webp" },
+        { name: "p2.webp", image: "/images/poltronas/p2.webp" },
+        { name: "p3.webp", image: "/images/poltronas/p3.webp" },
+        { name: "p4.webp", image: "/images/poltronas/p4.webp" },
+        { name: "p5.webp", image: "/images/poltronas/p5.webp" },
+        { name: "p6.webp", image: "/images/poltronas/p6.webp" }
       ]
     },
     {
@@ -109,12 +109,12 @@ export const Collections = () => {
       description: "Mesas de jantar de alto padrão e cadeiras exclusivas para momentos inesquecíveis em sua residência.",
       image: "/images/salas-de-jantar/m1.webp",
       items: [
-        { name: "Mesa de Jantar Alto Padrão", image: "/images/salas-de-jantar/m1.webp" },
-        { name: "Sala de Jantar Elegance", image: "/images/salas-de-jantar/m2.webp" },
-        { name: "Conjunto Jantar Moderno", image: "/images/salas-de-jantar/m3.webp" },
-        { name: "Mesa de Jantar Exclusiva", image: "/images/salas-de-jantar/m4.webp" },
-        { name: "Mesa de Jantar Clássica", image: "/images/salas-de-jantar/m5.webp" },
-        { name: "Sala de Jantar Completa", image: "/images/salas-de-jantar/m6.webp" }
+        { name: "m1.webp", image: "/images/salas-de-jantar/m1.webp" },
+        { name: "m2.webp", image: "/images/salas-de-jantar/m2.webp" },
+        { name: "m3.webp", image: "/images/salas-de-jantar/m3.webp" },
+        { name: "m4.webp", image: "/images/salas-de-jantar/m4.webp" },
+        { name: "m5.webp", image: "/images/salas-de-jantar/m5.webp" },
+        { name: "m6.webp", image: "/images/salas-de-jantar/m6.webp" }
       ]
     },
     {
@@ -123,12 +123,12 @@ export const Collections = () => {
       description: "Mesas de centro, lateral e apoio com design autoral, materiais nobres e acabamentos refinados.",
       image: "/images/mesas/m1.webp",
       items: [
-        { name: "Mesa de Centro Escultural", image: "/images/mesas/m1.webp" },
-        { name: "Mesa Lateral Orgânica", image: "/images/mesas/m2.webp" },
-        { name: "Mesa de Apoio Mármore", image: "/images/mesas/m3.webp" },
-        { name: "Mesa de Cabeceira Premium", image: "/images/mesas/m4.webp" },
-        { name: "Mesa de Centro Minimalista", image: "/images/mesas/m5.webp" },
-        { name: "Mesa de Centro Exclusiva", image: "/images/mesas/m6.webp" }
+        { name: "m1.webp", image: "/images/mesas/m1.webp" },
+        { name: "m2.webp", image: "/images/mesas/m2.webp" },
+        { name: "m3.webp", image: "/images/mesas/m3.webp" },
+        { name: "m4.webp", image: "/images/mesas/m4.webp" },
+        { name: "m5.webp", image: "/images/mesas/m5.webp" },
+        { name: "m6.webp", image: "/images/mesas/m6.webp" }
       ]
     },
     {
@@ -137,12 +137,12 @@ export const Collections = () => {
       description: "Cadeiras autorais e ergonômicas que combinam conforto térmico, estética contemporânea e acabamento impecável.",
       image: "/images/cadeiras/c1.webp",
       items: [
-        { name: "Cadeira Curadoria Design", image: "/images/cadeiras/c1.webp" },
-        { name: "Cadeira Estofada Premium", image: "/images/cadeiras/c2.webp" },
-        { name: "Cadeira de Jantar Wood", image: "/images/cadeiras/c3.webp" },
-        { name: "Cadeira Contemporânea", image: "/images/cadeiras/c4.webp" },
-        { name: "Cadeira Ergonômica Luxe", image: "/images/cadeiras/c5.webp" },
-        { name: "Cadeira Exclusiva Jantar", image: "/images/cadeiras/c6.webp" }
+        { name: "c1.webp", image: "/images/cadeiras/c1.webp" },
+        { name: "c2.webp", image: "/images/cadeiras/c2.webp" },
+        { name: "c3.webp", image: "/images/cadeiras/c3.webp" },
+        { name: "c4.webp", image: "/images/cadeiras/c4.webp" },
+        { name: "c5.webp", image: "/images/cadeiras/c5.webp" },
+        { name: "c6.webp", image: "/images/cadeiras/c6.webp" }
       ]
     },
     {
@@ -151,12 +151,12 @@ export const Collections = () => {
       description: "Objetos de arte, vasos e acessórios sofisticados que dão o toque final de personalidade aos seus espaços.",
       image: "/images/decoracao/d1.webp",
       items: [
-        { name: "Vaso Escultural", image: "/images/decoracao/d1.webp" },
-        { name: "Centro de Mesa Design", image: "/images/decoracao/d2.webp" },
-        { name: "Escultura Decorativa", image: "/images/decoracao/d3.webp" },
-        { name: "Objeto de Arte Contemporâneo", image: "/images/decoracao/d4.webp" },
-        { name: "Vaso Cerâmica Minimalista", image: "/images/decoracao/d5.webp" },
-        { name: "Adorno de Mesa Nobre", image: "/images/decoracao/d6.webp" }
+        { name: "d1.webp", image: "/images/decoracao/d1.webp" },
+        { name: "d2.webp", image: "/images/decoracao/d2.webp" },
+        { name: "d3.webp", image: "/images/decoracao/d3.webp" },
+        { name: "d4.webp", image: "/images/decoracao/d4.webp" },
+        { name: "d5.webp", image: "/images/decoracao/d5.webp" },
+        { name: "d6.webp", image: "/images/decoracao/d6.webp" }
       ]
     }
   ];
